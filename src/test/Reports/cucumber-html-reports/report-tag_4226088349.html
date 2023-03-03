@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Tag: @VerifyQuizAnswerPositions</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Qa-Automation</td>
+      <td>09 Feb 2023, 19:45</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Tag Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Tag</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">@VerifyQuizAnswerPositions</td>
+          <td      class="passed"    >26</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">26</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="504999250">0.504</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="elements">
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1800339063.html">src/test/resources/API/MobileAPIFeatures/Homepage/MainHomepageQuestions.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_1287359789.html">@Sanity</a>
+       <a href="report-tag_2149460725.html">@GET</a>
+       <a href="report-tag_2226523296.html">@Regression</a>
+       <a href="report-tag_2677254380.html">@Questions</a>
+       <a href="report-tag_4059758862.html">@Smoke</a>
+       <a href="report-tag_1128156417.html">@Mobile</a>
+       <a href="report-tag_2857067814.html">@MainHomepage</a>
+       <a href="report-tag_4173765225.html">@MobileApiTest</a>
+       <a href="report-tag_4226088349.html">@VerifyQuizAnswerPositions</a>
+</div>
+
+
+  <span class="lead-duration duration">0.504</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Verify Quiz Answer Positions</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path pathsTo.MobileAPI.Questions</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">headers headersToBeUsed</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+
+  <span class="lead-duration duration">0.466</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>19:45:27.048 request:
+1 &gt; GET https://dev.homemedia.api.by433.com/v2/questions
+1 &gt; Content-Type: application/json
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip, deflate, br
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjMyMWQyYzJmMDQ0ZGIwNDIzNGJkYjJiIiwiZmlyc3RfbmFtZSI6Ik5ldyIsImxhc3RfbmFtZSI6IlVzZXIiLCJnZW5kZXIiOjEsImRhdGVfb2ZfYmlydGgiOiIxOTk2LTEyLTEyVDAwOjAwOjAwLjAwMFoiLCJlbWFpbCI6Im1vaXpAeW9wbWFpbC5jb20iLCJ1c2VybmFtZSI6InVzZXIzMzQ0IiwicHJvZmlsZV9waWN0dXJlIjoiYnVja2V0IGZpbGUgcGF0aCIsImxhc3Rfc2VlbiI6IjIwMjItMTAtMzFUMDY6NDE6MzEuMDAwWiIsImJpb2dyYXBoeSI6IiIsIm5vX29mX2ZyaWVuZHMiOjAsImplcnNleV9udW1iZXIiOjcsImlzX21hbnVhbF9sb2dpbiI6dHJ1ZSwibm90aWZpY2F0aW9uIjpmYWxzZSwiaXNfZGVtbyI6ZmFsc2UsImRldmljZV90b2tlbiI6bnVsbCwicHJvZmlsZV9hY2Nlc3NpYmlsaXR5IjoicHVibGljIn0sImlhdCI6MTY3NTk1MzkyNywiZXhwIjoxNjc2MDQwMzI3LCJhdWQiOiJbb2JqZWN0IE9iamVjdF0iLCJpc3MiOiI0MzMtZGV2In0.MnNGaxx2C626r2uD6yFCNezhJTBgce1Zm9T6RYnrRnY
+1 &gt; Host: dev.homemedia.api.by433.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+
+
+19:45:27.511 response time in milliseconds: 463
+1 &lt; 200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 09 Feb 2023 14:45:27 GMT
+1 &lt; x-amzn-RequestId: 0a535bdf-c1fc-41e4-8682-875fe4d888c6
+1 &lt; referrer-policy: no-referrer
+1 &lt; x-dns-prefetch-control: off
+1 &lt; x-permitted-cross-domain-policies: none
+1 &lt; x-xss-protection: 0
+1 &lt; access-control-allow-origin: *
+1 &lt; expect-ct: max-age=0
+1 &lt; strict-transport-security: max-age=15552000; includeSubDomains
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; content-security-policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+1 &lt; origin-agent-cluster: ?1
+1 &lt; cross-origin-embedder-policy: require-corp
+1 &lt; x-download-options: noopen
+1 &lt; cross-origin-opener-policy: same-origin
+1 &lt; x-amz-apigw-id: AE4JNGAHoAMFtqw=
+1 &lt; vary: Accept-Encoding
+1 &lt; x-content-type-options: nosniff
+1 &lt; etag: W/&quot;c9f-lI6f/gAWdIy99dQMwjI7/utAmKo&quot;
+1 &lt; x-powered-by: BACKEND REPO :)
+1 &lt; cross-origin-resource-policy: same-origin
+1 &lt; X-Amzn-Trace-Id: Root=1-63e50707-1e3020cd1f93a0da38644069;Sampled=0
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 65edee9bf063a4c6aaeaaa7ad78d7db6.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: DXB53-P1
+1 &lt; X-Amz-Cf-Id: SKFydHbSJiTgimlLJ9A3NpS1hB-giEUwWdkyJF4IG4iORjE-vg9h2Q==
+{&quot;response&quot;:true,&quot;status_code&quot;:200,&quot;message&quot;:&quot;Success&quot;,&quot;error_msgs&quot;:[],&quot;meta_data&quot;:{},&quot;data&quot;:{&quot;total_records&quot;:3,&quot;total_polls&quot;:2,&quot;total_quizzes&quot;:1,&quot;result_summery_poll&quot;:{&quot;id&quot;:&quot;63e4469aaeba0777962988e0&quot;,&quot;results_title&quot;:&quot;THANKS, SEE YOU NEXT TIME!&quot;,&quot;results_image&quot;:&quot;media/photos/3a4ffcab-42a6-4926-9e12-10542a5c8f09.jpeg&quot;},&quot;result_summery_quiz&quot;:{&quot;id&quot;:&quot;63e5062c55c5357cf51fd5c5&quot;,&quot;positive_results_title&quot;:&quot;GREAT JOB!&quot;,&quot;positive_results_image&quot;:&quot;media/photos/3a4ffcab-42a6-4926-9e12-10542a5c8f09.jpeg&quot;,&quot;negative_results_title&quot;:&quot;BETTER LUCK NEXT TIME!&quot;,&quot;negative_results_image&quot;:&quot;media/photos/3a4ffcab-42a6-4926-9e12-10542a5c8f09.jpeg&quot;},&quot;poll_main_image&quot;:&quot;media/photos/QA_Image_1.png&quot;,&quot;poll_main_title&quot;:&quot;API Test Poll&quot;,&quot;quiz_main_image&quot;:&quot;media/photos/ce77f296-7bc6-4ca1-a113-0eec0977e52d.png&quot;,&quot;quiz_main_title&quot;:&quot;Hassan's Addition&quot;,&quot;records&quot;:[{&quot;id&quot;:&quot;63e4469aaeba0777962988e1&quot;,&quot;meta_id&quot;:&quot;63e4469aaeba0777962988e0&quot;,&quot;question&quot;:&quot;Poll 1 API Automation&quot;,&quot;question_type&quot;:&quot;poll&quot;,&quot;image&quot;:&quot;media/photos/QA_Image_1.png&quot;,&quot;total_question_participants&quot;:19,&quot;position&quot;:1,&quot;answers&quot;:[{&quot;id&quot;:&quot;63e4469aaeba0777962988e4&quot;,&quot;answer_type&quot;:&quot;poll&quot;,&quot;answer&quot;:&quot;Argnetina&quot;,&quot;position&quot;:0,&quot;total_answer_participants&quot;:19,&quot;is_answered&quot;:false,&quot;my_answer&quot;:{}},{&quot;id&quot;:&quot;63e4469aaeba0777962988e5&quot;,&quot;answer_type&quot;:&quot;poll&quot;,&quot;answer&quot;:&quot;France&quot;,&quot;position&quot;:1,&quot;total_answer_participants&quot;:0,&quot;is_answered&quot;:false,&quot;my_answer&quot;:{}},{&quot;id&quot;:&quot;63e4469aaeba0777962988e6&quot;,&quot;answer_type&quot;:&quot;poll&quot;,&quot;answer&quot;:&quot;Germany&quot;,&quot;position&quot;:2,&quot;total_answer_participants&quot;:0,&quot;is_answered&quot;:false,&quot;my_answer&quot;:{}},{&quot;id&quot;:&quot;63e4469aaeba0777962988e7&quot;,&quot;answer_type&quot;:&quot;poll&quot;,&quot;answer&quot;:&quot;UAE&quot;,&quot;position&quot;:3,&quot;total_answer_participants&quot;:0,&quot;is_answered&quot;:false,&quot;my_answer&quot;:{}}],&quot;end_date&quot;:&quot;&quot;,&quot;created_at&quot;:&quot;2023-02-09T01:04:26.058Z&quot;},{&quot;id&quot;:&quot;63e5062d55c5357cf51fd5c6&quot;,&quot;meta_id&quot;:&quot;63e5062c55c5357cf51fd5c5&quot;,&quot;question&quot;:&quot;How are you&quot;,&quot;question_type&quot;:&quot;quiz&quot;,&quot;image&quot;:&quot;media/photos/604bff9d-1dc0-41d3-8a42-050dc3d1bdbd.png&quot;,&quot;total_question_participants&quot;:4,&quot;position&quot;:1,&quot;answers&quot;:[{&quot;id&quot;:&quot;63e5062d55c5357cf51fd5c9&quot;,&quot;answer_type&quot;:&quot;wrong_answer_1&quot;,&quot;answer&quot;:&quot;Very Very Bad&quot;,&quot;position&quot;:0,&quot;total_answer_participants&quot;:3,&quot;is_answered&quot;:false,&quot;my_answer&quot;:{}},{&quot;id&quot;:&quot;63e5062d55c5357cf51fd5c8&quot;,&quot;answer_type&quot;:&quot;right_answer&quot;,&quot;answer&quot;:&quot;Very Bad&quot;,&quot;position&quot;:1,&quot;total_answer_participants&quot;:1,&quot;is_answered&quot;:false,&quot;my_answer&quot;:{}}],&quot;end_date&quot;:&quot;&quot;,&quot;created_at&quot;:&quot;2023-02-09T14:41:49.018Z&quot;},{&quot;id&quot;:&quot;63e4469aaeba0777962988e2&quot;,&quot;meta_id&quot;:&quot;63e4469aaeba0777962988e0&quot;,&quot;question&quot;:&quot;Poll 2 API Automation&quot;,&quot;question_type&quot;:&quot;poll&quot;,&quot;image&quot;:&quot;media/photos/QA_Image_2.jpeg&quot;,&quot;total_question_participants&quot;:8,&quot;position&quot;:2,&quot;answers&quot;:[{&quot;id&quot;:&quot;63e4469aaeba0777962988e9&quot;,&quot;answer_type&quot;:&quot;poll&quot;,&quot;answer&quot;:&quot;Pakistan&quot;,&quot;position&quot;:0,&quot;total_answer_participants&quot;:8,&quot;is_answered&quot;:false,&quot;my_answer&quot;:{}},{&quot;id&quot;:&quot;63e4469aaeba0777962988ea&quot;,&quot;answer_type&quot;:&quot;poll&quot;,&quot;answer&quot;:&quot;India&quot;,&quot;position&quot;:1,&quot;total_answer_participants&quot;:0,&quot;is_answered&quot;:false,&quot;my_answer&quot;:{}},{&quot;id&quot;:&quot;63e4469aaeba0777962988eb&quot;,&quot;answer_type&quot;:&quot;poll&quot;,&quot;answer&quot;:&quot;China&quot;,&quot;position&quot;:2,&quot;total_answer_participants&quot;:0,&quot;is_answered&quot;:false,&quot;my_answer&quot;:{}},{&quot;id&quot;:&quot;63e4469aaeba0777962988ec&quot;,&quot;answer_type&quot;:&quot;poll&quot;,&quot;answer&quot;:&quot;Afghanistan&quot;,&quot;position&quot;:3,&quot;total_answer_participants&quot;:0,&quot;is_answered&quot;:false,&quot;my_answer&quot;:{}}],&quot;end_date&quot;:&quot;&quot;,&quot;created_at&quot;:&quot;2023-02-09T01:04:26.058Z&quot;}]}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.status_code == 200</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.message == &quot;Success&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def error_msgs = response.error_msgs</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">assert error_msgs.length == 0</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data.total_records != 0</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match $..question_type contains any [poll,quiz]</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def Quiz_ids = $..[?(@.question_type=='quiz')].id</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">if (Quiz_ids.length == 0) karate.fail(&quot;total Quizrecords = 0&quot;)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def FirstQuiz_ids =  Quiz_ids[0]</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def Quiz_Answer_Type = $..[?(@.question_type=='quiz')]answers..answer_type</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def Quiz_Answer_id = karate.jsonPath(response, &quot;$..[?(@.id=='&quot; + FirstQuiz_ids + &quot;')]answers..id&quot;)[0]</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def Quiz_Answer_Position = karate.jsonPath(response, &quot;$..[?(@.answer_type=='right_answer')].position&quot;)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def result = 0</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def fun = function(x){ var temp = karate.get('result'); karate.set('result', temp + x )}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">karate.forEach(Quiz_Answer_Position, fun)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print result</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>19:45:27.530 [print] 1 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print  Quiz_Answer_Position.length</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>19:45:27.531 [print] 1 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">if  (Quiz_Answer_Position.length &gt; 1) karate.match(&quot;result != 0&quot;)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match each $..Quiz_Answer_Type contains any [right_answer, wrong_answer_1, wrong_answer_2, wrong_answer_3]</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">string jsonResponse = response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">string JSONSchemaExpected = read('../../schemas/mainHomepageQuestions.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">assert JavaFunctions.isValid(jsonResponse,JSONSchemaExpected)</span>
+
+  <span class="lead-duration duration">0.019</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

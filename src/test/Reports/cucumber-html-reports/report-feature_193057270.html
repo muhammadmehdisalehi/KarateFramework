@@ -1,0 +1,1576 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: src/test/resources/API/MobileAPIFeatures/Homepage/MainHomepageTopBanners.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Qa-Automation</td>
+      <td>12 Jan 2023, 20:25</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">src/test/resources/API/MobileAPIFeatures/Homepage/MainHomepageTopBanners.feature</td>
+          <td      class="passed"    >40</td>
+          <td      class="failed"    >1</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">41</td>
+
+          <td >0</td>
+          <td  class="failed"    >1</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="5328990871">5.328</td>
+          <td class="failed">Failed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2857067814.html">@MainHomepage</a>
+       <a href="report-tag_3969421329.html">@TopBanners</a>
+</div>
+
+
+<div class="brief failed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">src/test/resources/API/MobileAPIFeatures/Homepage/MainHomepageTopBanners.feature</span>
+
+
+</div>
+
+        <div class="description indention">Main Homepage v2 Top Banners API</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.052</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url startingURL+'homemedia'+endingUrl</span>
+
+  <span class="lead-duration duration">0.009</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>20:25:07.453 karate.env system property was: dev 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def JavaData = Java.type('DataReader.JavaFunctionsAPI.com.veritec.automation.EnvConfig')</span>
+
+  <span class="lead-duration duration">0.008</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def JavaFunctions = Java.type('JavaFunctionsAPI.com.veritec.automation.ReusableFunctions')</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def payloadsData = read('../../payloads/devDataAPI.json')</span>
+
+  <span class="lead-duration duration">0.023</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def pathsTo = read('../../support/paths.json')</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def paramsTo = read('../../support/params.json')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def headersTo = read('../../support/headers.json')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def headersToBeUsed = headersTo.CommonHeaders</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_1287359789.html">@Sanity</a>
+       <a href="report-tag_1136583278.html">@GetMainHomepageTopBanners</a>
+       <a href="report-tag_2149460725.html">@GET</a>
+       <a href="report-tag_2226523296.html">@Regression</a>
+       <a href="report-tag_3969421329.html">@TopBanners</a>
+       <a href="report-tag_4059758862.html">@Smoke</a>
+       <a href="report-tag_1128156417.html">@Mobile</a>
+       <a href="report-tag_2857067814.html">@MainHomepage</a>
+       <a href="report-tag_4173765225.html">@MobileApiTest</a>
+</div>
+
+
+  <span class="lead-duration duration">5.276</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-4">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">API for Main Homepage Top Banners (v2)</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-5">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def featureToBeUsed = read('../Login/Login.feature@ValidUserLogin')</span>
+
+  <span class="lead-duration duration">0.015</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def result = call featureToBeUsed</span>
+
+  <span class="lead-duration duration">1.827</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">src/test/resources/API/MobileAPIFeatures/Homepage/../Login/Login.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url startingURL+'sharedservice'+endingUrl</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def JavaData = Java.type('DataReader.JavaFunctionsAPI.com.veritec.automation.EnvConfig')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def payloadsData = read('../../payloads/devDataAPI.json')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def pathsTo = read('../../support/paths.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def RegisteredUserLoginPayload = payloadsData.LoginCredentials.RegisteredUser_Login</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">RegisteredUserLoginPayload[&quot;email&quot;] = JavaData.configEmail</span>
+
+  <span class="lead-duration duration">0.025</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">RegisteredUserLoginPayload[&quot;password&quot;] = JavaData.configPassword</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path pathsTo.MobileAPI.Login</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request RegisteredUserLoginPayload</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">1.732</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>20:25:08.104 request:
+1 &gt; POST https://dev.sharedservice.api.by433.com/api/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 51
+1 &gt; Host: dev.sharedservice.api.by433.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;moiz@yopmail.com&quot;,&quot;password&quot;:&quot;Admin@123&quot;}
+
+20:25:09.358 response time in milliseconds: 1249
+1 &lt; 200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 2920
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 12 Jan 2023 15:25:11 GMT
+1 &lt; x-amzn-RequestId: 096d912d-1889-458c-856a-98ce5661555f
+1 &lt; access-control-allow-origin: *
+1 &lt; x-amzn-Remapped-content-length: 2920
+1 &lt; x-amz-apigw-id: eortqHAmIAMFl2A=
+1 &lt; etag: W/&quot;b68-nDVCQ77/jmJ4sfcw+4mFovCtSRA&quot;
+1 &lt; x-powered-by: Express
+1 &lt; X-Amzn-Trace-Id: Root=1-63c02657-43ca0e746d103f7a2abff785
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 1d57a231e42e3eef58e0453d8bd544ee.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: DXB53-P1
+1 &lt; X-Amz-Cf-Id: 36b7sIYTb5XTd0Agz7IuTAsgTvlcmlG_FEFijoaODx18rvf1vkegXQ==
+{&quot;response&quot;:true,&quot;status_code&quot;:200,&quot;message&quot;:&quot;User logged in successfully &quot;,&quot;error_msgs&quot;:{},&quot;data&quot;:{&quot;user&quot;:{&quot;id&quot;:&quot;6321d2c2f044db04234bdb2b&quot;,&quot;first_name&quot;:&quot;New&quot;,&quot;last_name&quot;:&quot;User&quot;,&quot;gender&quot;:1,&quot;date_of_birth&quot;:&quot;1996-12-12T00:00:00.000Z&quot;,&quot;email&quot;:&quot;moiz@yopmail.com&quot;,&quot;username&quot;:&quot;user3344&quot;,&quot;profile_picture&quot;:&quot;bucket file path&quot;,&quot;last_seen&quot;:&quot;2022-10-31T06:41:31.000Z&quot;,&quot;access_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjMyMWQyYzJmMDQ0ZGIwNDIzNGJkYjJiIiwiZmlyc3RfbmFtZSI6Ik5ldyIsImxhc3RfbmFtZSI6IlVzZXIiLCJnZW5kZXIiOjEsImRhdGVfb2ZfYmlydGgiOiIxOTk2LTEyLTEyVDAwOjAwOjAwLjAwMFoiLCJlbWFpbCI6Im1vaXpAeW9wbWFpbC5jb20iLCJ1c2VybmFtZSI6InVzZXIzMzQ0IiwicHJvZmlsZV9waWN0dXJlIjoiYnVja2V0IGZpbGUgcGF0aCIsImxhc3Rfc2VlbiI6IjIwMjItMTAtMzFUMDY6NDE6MzEuMDAwWiIsImJpb2dyYXBoeSI6IiIsIm5vX29mX2ZyaWVuZHMiOjAsImplcnNleV9udW1iZXIiOjcsImlzX21hbnVhbF9sb2dpbiI6dHJ1ZSwibm90aWZpY2F0aW9uIjpmYWxzZSwiaXNfZGVtbyI6ZmFsc2UsImRldmljZV90b2tlbiI6bnVsbCwicHJvZmlsZV9hY2Nlc3NpYmlsaXR5IjoicHVibGljIn0sImlhdCI6MTY3MzUzNzExMSwiZXhwIjoxNjczNjIzNTExLCJhdWQiOiJbb2JqZWN0IE9iamVjdF0iLCJpc3MiOiI0MzMtZGV2In0.7MzX7Ql4JVIttLXlcOZlblQDbC1b-Zi-sajjPMX32P0&quot;,&quot;refresh_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjMyMWQyYzJmMDQ0ZGIwNDIzNGJkYjJiIiwiZmlyc3RfbmFtZSI6IkRlbW8iLCJsYXN0X25hbWUiOiJVc2VyIiwiZ2VuZGVyIjoxLCJkYXRlX29mX2JpcnRoIjoiMTk5Ni0xMi0xMlQwMDowMDowMC4wMDBaIiwiZW1haWwiOiJtb2l6QHlvcG1haWwuY29tIiwidXNlcm5hbWUiOiJ1c2VyMzM0NCIsInByb2ZpbGVfcGljdHVyZSI6ImJ1Y2tldCBmaWxlIHBhdGgiLCJsYXN0X3NlZW4iOm51bGwsImFjY2Vzc190b2tlbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUoxYzJWeUlqcDdJbWxrSWpvaU5qTXlNV1F5WXpKbU1EUTBaR0l3TkRJek5HSmtZakppSWl3aVptbHljM1JmYm1GdFpTSTZJa1JsYlc4aUxDSnNZWE4wWDI1aGJXVWlPaUpWYzJWeUlpd2laMlZ1WkdWeUlqb3hMQ0prWVhSbFgyOW1YMkpwY25Sb0lqb2lNVGs1TmkweE1pMHhNbFF3TURvd01Eb3dNQzR3TURCYUlpd2laVzFoYVd3aU9pSnRiMmw2UUhsdmNHMWhhV3d1WTI5dElpd2lkWE5sY201aGJXVWlPaUoxYzJWeU16TTBOQ0lzSW5CeWIyWnBiR1ZmY0dsamRIVnlaU0k2SW1KMVkydGxkQ0JtYVd4bElIQmhkR2dpTENKc1lYTjBYM05sWlc0aU9tNTFiR3dzSW1KcGIyZHlZWEJvZVNJNklpSXNJbTV2WDI5bVgyWnlhV1Z1WkhNaU9qQXNJbXBsY25ObGVWOXVkVzFpWlhJaU9qY3NJbWx6WDIxaGJuVmhiRjlzYjJkcGJpSTZkSEoxWlN3aWJtOTBhV1pwWTJGMGFXOXVJanAwY25WbExDSnBjMTlrWlcxdklqcG1ZV3h6WlN3aVpHVjJhV05sWDNSdmEyVnVJanB1ZFd4c0xDSndjbTltYVd4bFgyRmpZMlZ6YzJsaWFXeHBkSGtpT2lKd2RXSnNhV01pZlN3aWFXRjBJam94TmpZek1UWXhNVGt3TENKbGVIQWlPakUyTmpNeU5EYzFPVEFzSW1GMVpDSTZJbHR2WW1wbFkzUWdUMkpxWldOMFhTSXNJbWx6Y3lJNklqUXpNeTFrWlhZaWZRLjI3TDBXNS1USC1kaFZLeC1yaDhzWGFpWF9fZjY2aXhSVTBhMzNHQ3NUQWsiLCJiaW9ncmFwaHkiOiIiLCJub19vZl9mcmllbmRzIjowLCJqZXJzZXlfbnVtYmVyIjo3LCJpc19tYW51YWxfbG9naW4iOnRydWUsIm5vdGlmaWNhdGlvbiI6dHJ1ZSwiaXNfZGVtbyI6ZmFsc2UsImRldmljZV90b2tlbiI6bnVsbCwicHJvZmlsZV9hY2Nlc3NpYmlsaXR5IjoicHVibGljIn0sImlhdCI6MTY2MzE2MTE5MH0.wfk4we3Vtg31rhJegNI26XyANN8ZFK3dlAaA96qItFY&quot;,&quot;biography&quot;:&quot;&quot;,&quot;no_of_friends&quot;:0,&quot;jersey_number&quot;:7,&quot;is_manual_login&quot;:true,&quot;notification&quot;:false,&quot;is_demo&quot;:false,&quot;device_token&quot;:null,&quot;profile_accessibility&quot;:&quot;public&quot;}}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response.status_code == 200</span>
+
+  <span class="lead-duration duration">0.020</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response.message == &quot;User logged in successfully &quot;</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response.data.user.access_token != null</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def accessToken = &quot;Bearer &quot;+response.data.user.access_token</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def headersToBeUsed = headersTo.CommonHeaders</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">headersToBeUsed[&quot;Authorization&quot;] = result.accessToken</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def parameters = paramsTo.MainHomePageTopBannersParams</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path pathsTo.MobileAPI.MainHomePageTopBanners</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">params parameters</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">headers headersToBeUsed</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+
+  <span class="lead-duration duration">1.223</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>20:25:09.429 request:
+1 &gt; GET https://dev.homemedia.api.by433.com/v2/main/top-banners?limit=10&amp;from=0
+1 &gt; Content-Type: application/json
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip, deflate, br
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjMyMWQyYzJmMDQ0ZGIwNDIzNGJkYjJiIiwiZmlyc3RfbmFtZSI6Ik5ldyIsImxhc3RfbmFtZSI6IlVzZXIiLCJnZW5kZXIiOjEsImRhdGVfb2ZfYmlydGgiOiIxOTk2LTEyLTEyVDAwOjAwOjAwLjAwMFoiLCJlbWFpbCI6Im1vaXpAeW9wbWFpbC5jb20iLCJ1c2VybmFtZSI6InVzZXIzMzQ0IiwicHJvZmlsZV9waWN0dXJlIjoiYnVja2V0IGZpbGUgcGF0aCIsImxhc3Rfc2VlbiI6IjIwMjItMTAtMzFUMDY6NDE6MzEuMDAwWiIsImJpb2dyYXBoeSI6IiIsIm5vX29mX2ZyaWVuZHMiOjAsImplcnNleV9udW1iZXIiOjcsImlzX21hbnVhbF9sb2dpbiI6dHJ1ZSwibm90aWZpY2F0aW9uIjpmYWxzZSwiaXNfZGVtbyI6ZmFsc2UsImRldmljZV90b2tlbiI6bnVsbCwicHJvZmlsZV9hY2Nlc3NpYmlsaXR5IjoicHVibGljIn0sImlhdCI6MTY3MzUzNzExMSwiZXhwIjoxNjczNjIzNTExLCJhdWQiOiJbb2JqZWN0IE9iamVjdF0iLCJpc3MiOiI0MzMtZGV2In0.7MzX7Ql4JVIttLXlcOZlblQDbC1b-Zi-sajjPMX32P0
+1 &gt; Host: dev.homemedia.api.by433.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+
+
+20:25:10.641 response time in milliseconds: 1210
+1 &lt; 200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 12 Jan 2023 15:25:12 GMT
+1 &lt; x-amzn-RequestId: 2da7511a-2a08-4ccc-b097-4fa31355b791
+1 &lt; referrer-policy: no-referrer
+1 &lt; x-dns-prefetch-control: off
+1 &lt; x-permitted-cross-domain-policies: none
+1 &lt; x-xss-protection: 0
+1 &lt; access-control-allow-origin: *
+1 &lt; expect-ct: max-age=0
+1 &lt; strict-transport-security: max-age=15552000; includeSubDomains
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; content-security-policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+1 &lt; origin-agent-cluster: ?1
+1 &lt; cross-origin-embedder-policy: require-corp
+1 &lt; x-download-options: noopen
+1 &lt; cross-origin-opener-policy: same-origin
+1 &lt; x-amz-apigw-id: eort4FbXIAMFbIw=
+1 &lt; vary: Accept-Encoding
+1 &lt; x-content-type-options: nosniff
+1 &lt; etag: W/&quot;8c4-ROd8G6AysER6cfQa4uxCG6E2Lnc&quot;
+1 &lt; x-powered-by: BACKEND REPO :)
+1 &lt; cross-origin-resource-policy: same-origin
+1 &lt; X-Amzn-Trace-Id: Root=1-63c02658-1f94ddbb28608ebf41a97277;Sampled=0
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 26031c09f93c38d6692be2136bd85f06.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: MCT50-P1
+1 &lt; X-Amz-Cf-Id: Rpue6A2Rp0t7N9qjzSsl_pz-ZRjwC4JakaNfHg6MOtCo7CEMMB1WJw==
+{&quot;response&quot;:true,&quot;status_code&quot;:200,&quot;message&quot;:&quot;Success&quot;,&quot;error_msgs&quot;:[],&quot;meta_data&quot;:{&quot;from&quot;:0,&quot;limit&quot;:10},&quot;data&quot;:{&quot;total_records&quot;:5,&quot;records&quot;:[{&quot;id&quot;:&quot;63bed8705e56f5072d954a69&quot;,&quot;model_name&quot;:&quot;Article&quot;,&quot;content_info&quot;:{&quot;id&quot;:&quot;63bea234134a4af4513090f0&quot;,&quot;title&quot;:&quot;QA Charlie&quot;,&quot;description&quot;:&quot;&quot;,&quot;portrait_cover_image&quot;:&quot;media/photos/513ba41f-da8a-41e6-91a0-318903ec5f65.jpeg&quot;,&quot;landscape_cover_image&quot;:&quot;media/photos/eb71279a-3421-4950-a358-5fd9b0c67e9f.png&quot;,&quot;child_category&quot;:{&quot;id&quot;:&quot;62de6b74888a1d804c23073f&quot;,&quot;name&quot;:&quot;Socials&quot;}}},{&quot;id&quot;:&quot;63bed8705e56f5072d954a6a&quot;,&quot;model_name&quot;:&quot;Media&quot;,&quot;content_info&quot;:{&quot;id&quot;:&quot;63be0b11106f779b273537c2&quot;,&quot;media_type&quot;:&quot;Watch&quot;,&quot;title&quot;:&quot;ii&quot;,&quot;description&quot;:&quot;&quot;,&quot;cover_image&quot;:&quot;media/photos/2d253c56-69cd-4a3e-88de-56a6ff51185d.png&quot;,&quot;portrait_cover_image&quot;:&quot;media/photos/2d253c56-69cd-4a3e-88de-56a6ff51185d.png&quot;,&quot;landscape_cover_image&quot;:&quot;media/photos/783cabfa-5848-4e61-b12e-936235c68484.png&quot;,&quot;child_category&quot;:{&quot;id&quot;:&quot;6225cb30dfda7d7d64704851&quot;,&quot;name&quot;:&quot;Rate these skills&quot;,&quot;slug&quot;:&quot;rate-these-skills&quot;}}},{&quot;id&quot;:&quot;63bed8705e56f5072d954a6b&quot;,&quot;model_name&quot;:&quot;News&quot;,&quot;content_info&quot;:{&quot;id&quot;:&quot;63bcb95c984a079f0060a0f8&quot;,&quot;title&quot;:&quot;Dummy News&quot;,&quot;description&quot;:&quot;News Description&quot;,&quot;cover_image&quot;:&quot;media/photos/5899dfec-bc18-4716-a255-db1a4003d06b.jpeg&quot;,&quot;portrait_cover_image&quot;:&quot;media/photos/5899dfec-bc18-4716-a255-db1a4003d06b.jpeg&quot;,&quot;landscape_cover_image&quot;:&quot;media/photos/5899dfec-bc18-4716-a255-db1a4003d06b.jpeg&quot;,&quot;child_category&quot;:{&quot;name&quot;:&quot;News&quot;,&quot;slug&quot;:&quot;news&quot;}}},{&quot;id&quot;:&quot;63bed8705e56f5072d954a6c&quot;,&quot;model_name&quot;:&quot;Article&quot;,&quot;content_info&quot;:{&quot;id&quot;:&quot;63be7f14fdf344480a038c84&quot;,&quot;title&quot;:&quot;Salman Upload Article&quot;,&quot;description&quot;:&quot;All Components&quot;,&quot;portrait_cover_image&quot;:&quot;media/photos/71bdf72e-d738-4c43-880f-0ac4083d2380.jpeg&quot;,&quot;landscape_cover_image&quot;:&quot;media/photos/d642ecbe-c59d-41d8-a297-41e89849fc06.jpeg&quot;,&quot;child_category&quot;:{&quot;id&quot;:&quot;62de6b74888a1d804c23073f&quot;,&quot;name&quot;:&quot;Socials&quot;}}},{&quot;id&quot;:&quot;63bed8705e56f5072d954a6d&quot;,&quot;model_name&quot;:&quot;Article&quot;,&quot;content_info&quot;:{&quot;id&quot;:&quot;63be9fadb7eb57a9da44d83e&quot;,&quot;title&quot;:&quot;Preview Article Preview Article&quot;,&quot;description&quot;:&quot;New Article&quot;,&quot;portrait_cover_image&quot;:&quot;media/photos/8325ca09-ddc7-4e43-ba5f-e5894087abeb.jpeg&quot;,&quot;landscape_cover_image&quot;:&quot;media/photos/4fd27ac5-6269-4c8d-ac40-ca269e7d6955.jpeg&quot;,&quot;child_category&quot;:{&quot;id&quot;:&quot;62de6b74888a1d804c23073f&quot;,&quot;name&quot;:&quot;Socials&quot;}}}]}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.status_code == 200</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.message == &quot;Success&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.meta_data.from == 0</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.meta_data.limit == 10</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">string jsonResponse = response</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">string JSONSchemaExpected = read('../../schemas/mainHomepageTopBannersSchema.json')</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* failed">
+  <span class="keyword indention">*</span>
+  <span class="name">assert JavaFunctions.isValid(jsonResponse,JSONSchemaExpected)</span>
+
+  <span class="lead-duration duration">0.389</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-8">
+          <a>did</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details  in ">
+        <pre>did not evaluate to 'true': JavaFunctions.isValid(jsonResponse,JSONSchemaExpected)
+src/test/resources/API/MobileAPIFeatures/Homepage/MainHomepageTopBanners.feature:32</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>20:25:11.052 src/test/resources/API/MobileAPIFeatures/Homepage/MainHomepageTopBanners.feature:32
+* assert JavaFunctions.isValid(jsonResponse,JSONSchemaExpected)
+did not evaluate to 'true': JavaFunctions.isValid(jsonResponse,JSONSchemaExpected)
+src/test/resources/API/MobileAPIFeatures/Homepage/MainHomepageTopBanners.feature:32
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Tag: @Publish_Media</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Qa-Automation</td>
+      <td>19 Jan 2023, 17:09</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Tag Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Tag</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">@Publish_Media</td>
+          <td      class="passed"    >11</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">11</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="846278875">0.846</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="elements">
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_3360395921.html">src/test/resources/API/CmsAPIFeafutes/Media/AddMedia.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2976305203.html">@Publish_Media</a>
+       <a href="report-tag_1287359789.html">@Sanity</a>
+       <a href="report-tag_2209050847.html">@POST</a>
+       <a href="report-tag_2149457128.html">@CMS</a>
+       <a href="report-tag_2226523296.html">@Regression</a>
+       <a href="report-tag_3306805029.html">@Prod_Exclusion</a>
+       <a href="report-tag_4059758862.html">@Smoke</a>
+       <a href="report-tag_1814949101.html">@CMS_Media</a>
+</div>
+
+
+  <span class="lead-duration duration">0.846</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Post Media</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def Payload = payloadsData.Media.Publish_Media</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">Payload.labels = result.FirstFourLabels</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention">#* Payload.elements[4].question_data.labels = result.FirstFourLabels</div>
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path pathsTo.CmsAPI.Media</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">headers headersToBeUsed</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request Payload</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.817</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>17:09:36.568 request:
+1 &gt; POST https://dev.cms.api.by433.com/api/v1/media/create-media
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip, deflate, br
+1 &gt; Authorization: Bearer e992215cd20570e2782101a5fb9922a227ef2c9d025cf9e672a9d229c906225fef55e484e311f26b0e41f26583d08adedd78451102f73cb54e11c35f8d237708b73631278fe8a9925a2d1c759c68f4ef482071487dc80a9ef50c35e3e5ad7bd4fa1583329d89c371aae64ddce3e0afa8ccc8bbbc03b60c8657c20c58fa9d3a80d32553329b115a60982191c3aa5962a097749825360cb96445aa541891df4221473bbaa6185f3d8b8dd6f8b94875f90d429071358528053b2acf8f1b5a342915f4f2b70db19ad71e74bc10460d3c56f98ecb37280bfcdaaf67963b0f5d6c4f7ee7b0b96f00a889e41427329d7c79b74ee82a18853fc16ef031875fc05ea12674ca396fb2cae4d5456f71bc557ead137e
+1 &gt; Content-Length: 1209
+1 &gt; Host: dev.cms.api.by433.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+{&quot;title&quot;:&quot;Media Title API Automation&quot;,&quot;is_scheduled&quot;:false,&quot;description&quot;:&quot;Media Description API Automation&quot;,&quot;duration&quot;:7,&quot;type&quot;:&quot;medialibrary&quot;,&quot;save_draft&quot;:false,&quot;main_category_id&quot;:&quot;620f692c5914ffddae36368b&quot;,&quot;sub_category_id&quot;:&quot;620f696edff44b4db86892a3&quot;,&quot;show_likes&quot;:true,&quot;show_comments&quot;:true,&quot;user_data&quot;:{&quot;id&quot;:&quot;63038f5c3a6bf8261da6bec2&quot;,&quot;first_name&quot;:&quot;Muhammad&quot;,&quot;last_name&quot;:&quot;Mehdi&quot;},&quot;dropbox_url&quot;:{&quot;media&quot;:&quot;&quot;,&quot;portrait_cover_image&quot;:&quot;&quot;,&quot;landscape_cover_image&quot;:&quot;&quot;},&quot;labels&quot;:[{&quot;id&quot;:&quot;63c7e4994be0d8031a0bd363&quot;,&quot;name&quot;:&quot;NEWNNNNNNNNN&quot;},{&quot;id&quot;:&quot;63b80bd8988760a618791124&quot;,&quot;name&quot;:&quot;ZZZZZ&quot;},{&quot;id&quot;:&quot;63b80bd8988760a618791123&quot;,&quot;name&quot;:&quot;ZZZZ&quot;},{&quot;id&quot;:&quot;63b80bd8988760a618791122&quot;,&quot;name&quot;:&quot;ZZZ&quot;}],&quot;media_url&quot;:&quot;media\/hls\/QA_Video_hls.m3u8&quot;,&quot;height&quot;:4096,&quot;width&quot;:2160,&quot;cover_image&quot;:{&quot;portrait&quot;:{&quot;height&quot;:720,&quot;width&quot;:1080,&quot;image_url&quot;:&quot;media\/photos\/QA_Image_1.png&quot;},&quot;landscape&quot;:{&quot;height&quot;:409,&quot;width&quot;:615,&quot;image_url&quot;:&quot;media\/photos\/QA_Image_1.png&quot;}},&quot;rules&quot;:[],&quot;file_name_media&quot;:&quot;QA_Media_video.mp4&quot;,&quot;file_name_portrait_image&quot;:&quot;media\/photos\/QA_Image_1.png&quot;,&quot;file_name_landscape_image&quot;:&quot;media\/photos\/QA_Image_1.png&quot;,&quot;file_name&quot;:&quot;QA_Media_video.mp4&quot;,&quot;video_data&quot;:&quot;media\/hls\/QA_Video_hls.m3u8&quot;,&quot;image_data&quot;:null,&quot;audio_data&quot;:null}
+
+17:09:37.303 response time in milliseconds: 732
+1 &lt; 200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 158
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 19 Jan 2023 12:09:37 GMT
+1 &lt; x-amzn-RequestId: ac455544-8fed-42fb-860d-99124c929325
+1 &lt; access-control-allow-origin: *
+1 &lt; x-amzn-Remapped-content-length: 158
+1 &lt; x-amz-apigw-id: e_ToMEkeoAMF1RA=
+1 &lt; vary: Accept-Encoding
+1 &lt; etag: W/&quot;9e-mvq0FBqmzCbaYE1O/czDyaIaRQ0&quot;
+1 &lt; x-powered-by: BACKEND TECH :)
+1 &lt; X-Amzn-Trace-Id: Root=1-63c93301-586b449a559ee52575f8eba7;Sampled=0
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 75b94876026d3e3fe0e5e7cfa5ea4bce.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: MCT50-P1
+1 &lt; X-Amz-Cf-Id: 9DvaeBaaeAwOkZokaI8uijcTQHcx-R9YZY4IJbr4ajIn6X9avNy7UA==
+{&quot;response&quot;:true,&quot;status_code&quot;:200,&quot;message&quot;:&quot;Media Created&quot;,&quot;error_msgs&quot;:{},&quot;data&quot;:{&quot;id&quot;:&quot;63c93301adf6b9021200f81e&quot;,&quot;is_scheduled&quot;:false,&quot;is_updated&quot;:false}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.status_code == 200</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.message == &quot;Media Created&quot;</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data.id != null</span>
+
+  <span class="lead-duration duration">0.012</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def mediaID = response.data.id</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

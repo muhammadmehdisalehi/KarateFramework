@@ -1,0 +1,1598 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: src/test/resources/API/CmsAPIFeafutes/Article/AddArticle.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Qa-Automation</td>
+      <td>20 Jan 2023, 14:42</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">src/test/resources/API/CmsAPIFeafutes/Article/AddArticle.feature</td>
+          <td      class="passed"    >37</td>
+          <td      class="failed"    >1</td>
+          <td     class="skipped"   >4</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">42</td>
+
+          <td >0</td>
+          <td  class="failed"    >1</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="2629778165">2.629</td>
+          <td class="failed">Failed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3031183231.html">@CMS_Article</a>
+       <a href="report-tag_2149457128.html">@CMS</a>
+</div>
+
+
+<div class="brief failed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">src/test/resources/API/CmsAPIFeafutes/Article/AddArticle.feature</span>
+
+
+</div>
+
+        <div class="description indention">Add Article</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">1.622</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url cmsBaseURL</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>14:42:31.303 karate.env system property was: dev 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def JavaData = Java.type('DataReader.JavaFunctionsAPI.com.veritec.automation.EnvConfig')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def re_usable = Java.type('JavaFunctionsAPI.com.veritec.automation.ReusableFunctions')</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def payloadsData = read('../../payloads/cmsDataAPI.json')</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def pathsTo = read('../../support/paths.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def paramsTo = read('../../support/params.json')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def headersTo = read('../../support/headers.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def headersToBeUsed = headersTo.CommonHeaders</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">headersToBeUsed[&quot;Authorization&quot;] = JavaData.getCMSToken()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def LabelsToBeUsed = read('../Labels/Labels.feature@GetLabels')</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def result = call LabelsToBeUsed</span>
+
+  <span class="lead-duration duration">0.808</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">src/test/resources/API/CmsAPIFeafutes/Article/../Labels/Labels.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url cmsBaseURL</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def JavaData = Java.type('DataReader.JavaFunctionsAPI.com.veritec.automation.EnvConfig')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def payloadsData = read('../../payloads/cmsDataAPI.json')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def pathsTo = read('../../support/paths.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def paramsTo = read('../../support/params.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def headersTo = read('../../support/headers.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def headersToBeUsed = headersTo.CommonHeaders</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">headersToBeUsed[&quot;Authorization&quot;] = JavaData.getCMSToken()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path pathsTo.CmsAPI.Labels</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">headers headersToBeUsed</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method GET</span>
+
+  <span class="lead-duration duration">0.772</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>14:42:31.337 request:
+1 &gt; GET https://dev.cms.api.by433.com/api/v1/label/all-labels
+1 &gt; Content-Type: application/json
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip, deflate, br
+1 &gt; Authorization: Bearer e992215cd20570e2782101a5fb9922a227ef2c9d025cf9e672a9d229c906225fef55e484e311f26b0e41f26583d08adedd78451102f73cb54e11c35f8d237708b73631278fe8a9925a2d1c759c68f4ef482071487dc80a9ef50c35e3e5ad7bd4fa1583329d89c371aae64ddce3e0afa8ccc8bbbc03b60c8657c20c58fa9d3a80d32553329b115a60982191c3aa5962a097749825360cb96445aa541891df4221473bbaa6185f3d8b8dd6f8b94875f90d429071358528053b2acf8f1b5a342915f4f2b70db19ad71e74bc10460d3c56f98ecb37280bfcdaaf67963b0f5d6c4f7ee7b0b96f00a889e41427329d7c79b74ee82a18853fc16ef031875fc05ea12674ca396fb2cae4d5456f71bc557ead137e
+1 &gt; Host: dev.cms.api.by433.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+
+
+14:42:32.104 response time in milliseconds: 766
+1 &lt; 200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 572
+1 &lt; Connection: keep-alive
+1 &lt; Date: Fri, 20 Jan 2023 09:42:32 GMT
+1 &lt; x-amzn-RequestId: fae78d7f-1d70-435a-bacc-63a8d86e1ce5
+1 &lt; access-control-allow-origin: *
+1 &lt; x-amzn-Remapped-content-length: 572
+1 &lt; x-amz-apigw-id: fCRBSHwVIAMFmyw=
+1 &lt; vary: Accept-Encoding
+1 &lt; etag: W/&quot;23c-L3DPfrqtD+GMbD+fCE+CX1PYUkU&quot;
+1 &lt; x-powered-by: BACKEND TECH :)
+1 &lt; X-Amzn-Trace-Id: Root=1-63ca6208-03d835193650fad9078e5f23;Sampled=0
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 b592b49233575b85e09a2b3c6a60b178.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: MCT50-P1
+1 &lt; X-Amz-Cf-Id: GHVdYkxWMQjuizld89I2SMW2-Je8E3sPIksDu-3gEtoLDhBnjF17KA==
+{&quot;response&quot;:true,&quot;status_code&quot;:200,&quot;message&quot;:&quot;Success&quot;,&quot;error_msgs&quot;:{},&quot;data&quot;:[{&quot;id&quot;:&quot;63c7e4994be0d8031a0bd363&quot;,&quot;name&quot;:&quot;NEWNNNNNNNNN&quot;},{&quot;id&quot;:&quot;63b80bd8988760a618791124&quot;,&quot;name&quot;:&quot;ZZZZZ&quot;},{&quot;id&quot;:&quot;63b80bd8988760a618791123&quot;,&quot;name&quot;:&quot;ZZZZ&quot;},{&quot;id&quot;:&quot;63b80bd8988760a618791122&quot;,&quot;name&quot;:&quot;ZZZ&quot;},{&quot;id&quot;:&quot;63b80bd8988760a618791121&quot;,&quot;name&quot;:&quot;ZXC&quot;},{&quot;id&quot;:&quot;63b80bd8988760a618791120&quot;,&quot;name&quot;:&quot;REX&quot;},{&quot;id&quot;:&quot;63b80bd8988760a61879111f&quot;,&quot;name&quot;:&quot;TREX&quot;},{&quot;id&quot;:&quot;63b8096e1b621fff4747b825&quot;,&quot;name&quot;:&quot;MN&quot;},{&quot;id&quot;:&quot;63a970a34c7c64dfeb3ad324&quot;,&quot;name&quot;:&quot;KARATE&quot;},{&quot;id&quot;:&quot;63a970a34c7c64dfeb3ad323&quot;,&quot;name&quot;:&quot;AUTOMATION&quot;}]}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response.status_code == 200</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response.message == &quot;Success&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">def Labels = karate.jsonPath(response, &quot;$..data&quot; )[0]</span>
+
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">def FirstFourLabels = karate.jsonPath(Labels, &quot;$..[0:4]&quot;)</span>
+
+  <span class="lead-duration duration">0.009</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3031183231.html">@CMS_Article</a>
+       <a href="report-tag_1287359789.html">@Sanity</a>
+       <a href="report-tag_1351889851.html">@TestData</a>
+       <a href="report-tag_2209050847.html">@POST</a>
+       <a href="report-tag_3246964312.html">@Positive</a>
+       <a href="report-tag_2402900293.html">@Publish_Article</a>
+       <a href="report-tag_2149457128.html">@CMS</a>
+       <a href="report-tag_2226523296.html">@Regression</a>
+       <a href="report-tag_3306805029.html">@Prod_Exclusion</a>
+       <a href="report-tag_4059758862.html">@Smoke</a>
+</div>
+
+
+  <span class="lead-duration duration">1.007</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-5">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Post Article</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-5" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-6">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-6" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def Payload = payloadsData.Article.Publish_Article</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">Payload[&quot;title&quot;] = &quot;Article &quot;+ JavaData.title</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">Payload.labels = result.FirstFourLabels</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">Payload.elements[5].question_data.labels = result.FirstFourLabels</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">Payload.elements[6].question_data.labels = result.FirstFourLabels</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path pathsTo.CmsAPI.Article</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">headers headersToBeUsed</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request Payload</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.993</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>14:42:32.147 request:
+1 &gt; POST https://dev.cms.api.by433.com/api/v1/article/post-article
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip, deflate, br
+1 &gt; Authorization: Bearer e992215cd20570e2782101a5fb9922a227ef2c9d025cf9e672a9d229c906225fef55e484e311f26b0e41f26583d08adedd78451102f73cb54e11c35f8d237708b73631278fe8a9925a2d1c759c68f4ef482071487dc80a9ef50c35e3e5ad7bd4fa1583329d89c371aae64ddce3e0afa8ccc8bbbc03b60c8657c20c58fa9d3a80d32553329b115a60982191c3aa5962a097749825360cb96445aa541891df4221473bbaa6185f3d8b8dd6f8b94875f90d429071358528053b2acf8f1b5a342915f4f2b70db19ad71e74bc10460d3c56f98ecb37280bfcdaaf67963b0f5d6c4f7ee7b0b96f00a889e41427329d7c79b74ee82a18853fc16ef031875fc05ea12674ca396fb2cae4d5456f71bc557ead137e
+1 &gt; Content-Length: 3909
+1 &gt; Host: dev.cms.api.by433.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+{&quot;save_draft&quot;:false,&quot;user_data&quot;:{&quot;id&quot;:&quot;63038f5c3a6bf8261da6bec2&quot;,&quot;first_name&quot;:&quot;Muhammad&quot;,&quot;last_name&quot;:&quot;Mehdi&quot;},&quot;main_category_id&quot;:&quot;628221f3e0d956f293fed378&quot;,&quot;sub_category_id&quot;:&quot;62822267f6a831a5801657ad&quot;,&quot;title&quot;:&quot;Article undefined&quot;,&quot;sub_text&quot;:&quot;Article Subtitle API Automation&quot;,&quot;dropbox_url&quot;:&quot;&quot;,&quot;landscape_dropbox_url&quot;:&quot;&quot;,&quot;author_text&quot;:&quot;Author Text API&quot;,&quot;author_image&quot;:&quot;media\/photos\/QA_Image_1.png&quot;,&quot;labels&quot;:[{&quot;id&quot;:&quot;63c7e4994be0d8031a0bd363&quot;,&quot;name&quot;:&quot;NEWNNNNNNNNN&quot;},{&quot;id&quot;:&quot;63b80bd8988760a618791124&quot;,&quot;name&quot;:&quot;ZZZZZ&quot;},{&quot;id&quot;:&quot;63b80bd8988760a618791123&quot;,&quot;name&quot;:&quot;ZZZZ&quot;},{&quot;id&quot;:&quot;63b80bd8988760a618791122&quot;,&quot;name&quot;:&quot;ZZZ&quot;}],&quot;show_likes&quot;:true,&quot;show_comments&quot;:true,&quot;is_scheduled&quot;:false,&quot;elements&quot;:[{&quot;element_type&quot;:&quot;TEXT&quot;,&quot;description&quot;:&quot;&lt;p&gt;Article Text API Automation The Quick Brown Fox Jumps Over the Lazy Dogs&lt;\/p&gt;&quot;,&quot;dropbox_url&quot;:&quot;&quot;,&quot;sort_order&quot;:1},{&quot;element_type&quot;:&quot;MEDIA&quot;,&quot;dropbox_url&quot;:&quot;&quot;,&quot;media_url&quot;:&quot;media\/photos\/QA_Image_2.jpeg&quot;,&quot;file_name&quot;:&quot;QA_Image_2.jpeg&quot;,&quot;width&quot;:1080,&quot;height&quot;:720,&quot;sort_order&quot;:2},{&quot;element_type&quot;:&quot;MEDIA&quot;,&quot;dropbox_url&quot;:&quot;&quot;,&quot;media_url&quot;:&quot;media\/hls\/QA_Video_hls\/00476daf-ddec-4ade-9bc4-19ecd20a85bf.m3u8&quot;,&quot;file_name&quot;:&quot;QA_Media_video.mp4&quot;,&quot;width&quot;:2160,&quot;height&quot;:4096,&quot;thumbnail_url&quot;:&quot;media\/photos\/QA_Video_Thumbnail.jpg&quot;,&quot;sort_order&quot;:3},{&quot;element_type&quot;:&quot;TWITTER&quot;,&quot;twitter_post_url&quot;:&quot;https:\/\/twitter.com\/i\/status\/987043161573752832&quot;,&quot;dropbox_url&quot;:&quot;&quot;,&quot;sort_order&quot;:4},{&quot;element_type&quot;:&quot;IG&quot;,&quot;ig_post_url&quot;:&quot;https:\/\/www.instagram.com\/p\/Clylm29DaTE\/?hl=en&quot;,&quot;dropbox_url&quot;:&quot;&quot;,&quot;sort_order&quot;:5},{&quot;element_type&quot;:&quot;QUESTION&quot;,&quot;question_data&quot;:{&quot;question_type&quot;:&quot;poll&quot;,&quot;labels&quot;:[{&quot;id&quot;:&quot;63c7e4994be0d8031a0bd363&quot;,&quot;name&quot;:&quot;NEWNNNNNNNNN&quot;},{&quot;id&quot;:&quot;63b80bd8988760a618791124&quot;,&quot;name&quot;:&quot;ZZZZZ&quot;},{&quot;id&quot;:&quot;63b80bd8988760a618791123&quot;,&quot;name&quot;:&quot;ZZZZ&quot;},{&quot;id&quot;:&quot;63b80bd8988760a618791122&quot;,&quot;name&quot;:&quot;ZZZ&quot;}],&quot;dropbox_url&quot;:&quot;&quot;,&quot;question&quot;:&quot;Article Question Poll API Auto&quot;,&quot;answers&quot;:[{&quot;answer&quot;:&quot;Poll Answer 1&quot;,&quot;position&quot;:0,&quot;type&quot;:&quot;poll&quot;},{&quot;answer&quot;:&quot;Poll Answer 2&quot;,&quot;position&quot;:1,&quot;type&quot;:&quot;poll&quot;}],&quot;image&quot;:&quot;media\/photos\/QA_Image_1.png&quot;,&quot;file_name&quot;:&quot;QA_Image_1.jpeg&quot;,&quot;width&quot;:1080,&quot;height&quot;:720},&quot;sort_order&quot;:6},{&quot;element_type&quot;:&quot;QUESTION&quot;,&quot;question_data&quot;:{&quot;question_type&quot;:&quot;quiz&quot;,&quot;labels&quot;:[{&quot;id&quot;:&quot;63c7e4994be0d8031a0bd363&quot;,&quot;name&quot;:&quot;NEWNNNNNNNNN&quot;},{&quot;id&quot;:&quot;63b80bd8988760a618791124&quot;,&quot;name&quot;:&quot;ZZZZZ&quot;},{&quot;id&quot;:&quot;63b80bd8988760a618791123&quot;,&quot;name&quot;:&quot;ZZZZ&quot;},{&quot;id&quot;:&quot;63b80bd8988760a618791122&quot;,&quot;name&quot;:&quot;ZZZ&quot;}],&quot;dropbox_url&quot;:&quot;&quot;,&quot;question&quot;:&quot;Article Question Quiz API Auto&quot;,&quot;answers&quot;:[{&quot;answer&quot;:&quot;Quiz Right Answer&quot;,&quot;position&quot;:0,&quot;type&quot;:&quot;right_answer&quot;},{&quot;answer&quot;:&quot;Quiz Wrong Answer&quot;,&quot;position&quot;:1,&quot;type&quot;:&quot;wrong_answer_1&quot;}],&quot;image&quot;:&quot;media\/photos\/QA_Image_2.png&quot;,&quot;file_name&quot;:&quot;QA_Image_2.jpeg&quot;,&quot;width&quot;:1080,&quot;height&quot;:720},&quot;sort_order&quot;:7},{&quot;element_type&quot;:&quot;MATCH&quot;,&quot;league_name&quot;:&quot;Bundesliga&quot;,&quot;match_title&quot;:&quot;26-01-2023 - Augsburg VS Borussia Moenchengladbach&quot;,&quot;team_name&quot;:&quot;Augsburg&quot;,&quot;match_id&quot;:&quot;62e396bfc47a131b855c2fe5&quot;,&quot;match&quot;:{&quot;_id&quot;:&quot;62e396bfc47a131b855c2fe5&quot;,&quot;name&quot;:&quot;26-01-2023 - Augsburg VS Borussia Moenchengladbach&quot;,&quot;startdate&quot;:&quot;2023-01-25T19:30:00.000Z&quot;,&quot;status_type&quot;:&quot;Not started&quot;,&quot;participant_teams_data&quot;:[{&quot;id&quot;:&quot;8406&quot;,&quot;name&quot;:&quot;Augsburg&quot;,&quot;countryFK&quot;:&quot;3&quot;,&quot;country_name&quot;:&quot;Germany&quot;,&quot;country_code&quot;:&quot;GER&quot;,&quot;team_logo&quot;:&quot;https:\/\/enetpulse-images.s3.amazonaws.com\/team\/8406.png&quot;,&quot;property&quot;:{&quot;IsNationalTeam&quot;:&quot;no&quot;,&quot;ToBeDecided&quot;:&quot;no&quot;,&quot;HomePage&quot;:&quot;https:\/\/www.fcaugsburg.de\/&quot;,&quot;home_shirt_color_1&quot;:&quot;#ba3733&quot;}},{&quot;id&quot;:&quot;9788&quot;,&quot;name&quot;:&quot;Borussia Moenchengladbach&quot;,&quot;countryFK&quot;:&quot;3&quot;,&quot;country_name&quot;:&quot;Germany&quot;,&quot;country_code&quot;:&quot;GER&quot;,&quot;team_logo&quot;:&quot;https:\/\/enetpulse-images.s3.amazonaws.com\/team\/9788.png&quot;,&quot;property&quot;:{&quot;IsNationalTeam&quot;:&quot;no&quot;,&quot;ToBeDecided&quot;:&quot;no&quot;,&quot;HomePage&quot;:&quot;http:\/\/www.borussia.de\/&quot;,&quot;home_shirt_color_1&quot;:&quot;#ffffff&quot;}}]},&quot;sort_order&quot;:8}],&quot;rules&quot;:[],&quot;file_name&quot;:&quot;QA_Image_1.png&quot;,&quot;image&quot;:&quot;media\/photos\/QA_Image_1.png&quot;,&quot;height&quot;:409,&quot;width&quot;:615,&quot;landscape_file_name&quot;:&quot;QA_Image_1.png&quot;,&quot;landscape_image&quot;:&quot;media\/photos\/QA_Image_1.png&quot;,&quot;landscape_height&quot;:409,&quot;landscape_width&quot;:615}
+
+14:42:33.127 response time in milliseconds: 978
+1 &lt; 422
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 139
+1 &lt; Connection: keep-alive
+1 &lt; Date: Fri, 20 Jan 2023 09:42:33 GMT
+1 &lt; x-amzn-RequestId: 13d50c45-f12d-4dfd-a9a8-0f0665a32f5a
+1 &lt; access-control-allow-origin: *
+1 &lt; api-version: undefined
+1 &lt; x-amzn-Remapped-content-length: 139
+1 &lt; x-amz-apigw-id: fCRBbE1KIAMFqVg=
+1 &lt; vary: Accept-Encoding
+1 &lt; etag: W/&quot;8b-WvtUy1zJtv/vLsmcm7tM0OvXjY8&quot;
+1 &lt; x-powered-by: BACKEND TECH :)
+1 &lt; X-Amzn-Trace-Id: Root=1-63ca6208-3db6de3f01e9a0885296e109;Sampled=0
+1 &lt; X-Cache: Error from cloudfront
+1 &lt; Via: 1.1 2a1cb290be30caf2d0bfaa39cccae752.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: MCT50-P1
+1 &lt; X-Amz-Cf-Id: 367J3C9feBYEkr8tdnKrAD4Drqm0U4cFaszi_mxGgwp2qnpDWFwjnw==
+{&quot;response&quot;:false,&quot;status_code&quot;:422,&quot;message&quot;:&quot;Invalid Parameters&quot;,&quot;error_msgs&quot;:{},&quot;data&quot;:{&quot;title&quot;:[&quot;'Article undefined' already exists&quot;]}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-8">
+          <a>status</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details  in ">
+        <pre>status code was: 422, expected: 200, response time in milliseconds: 978, url: https://dev.cms.api.by433.com/api/v1/article/post-article, response: 
+{&quot;response&quot;:false,&quot;status_code&quot;:422,&quot;message&quot;:&quot;Invalid Parameters&quot;,&quot;error_msgs&quot;:{},&quot;data&quot;:{&quot;title&quot;:[&quot;'Article undefined' already exists&quot;]}}
+src/test/resources/API/CmsAPIFeafutes/Article/AddArticle.feature:30</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>14:42:33.138 src/test/resources/API/CmsAPIFeafutes/Article/AddArticle.feature:30
+Then status 200
+status code was: 422, expected: 200, response time in milliseconds: 978, url: https://dev.cms.api.by433.com/api/v1/article/post-article, response: 
+{&quot;response&quot;:false,&quot;status_code&quot;:422,&quot;message&quot;:&quot;Invalid Parameters&quot;,&quot;error_msgs&quot;:{},&quot;data&quot;:{&quot;title&quot;:[&quot;'Article undefined' already exists&quot;]}}
+src/test/resources/API/CmsAPIFeafutes/Article/AddArticle.feature:30
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.status_code == 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.message == &quot;Article Created&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data.id != null</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def articleID = response.data.id</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

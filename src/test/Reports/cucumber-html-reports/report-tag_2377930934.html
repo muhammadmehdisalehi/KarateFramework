@@ -1,0 +1,3796 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Tag: @PostMainHomeAnswerQuestions</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Qa-Automation</td>
+      <td>11 Jan 2023, 22:23</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Tag Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Tag</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">@PostMainHomeAnswerQuestions</td>
+          <td      class="passed"    >122</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">122</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="12672586326">12.672</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="elements">
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1800339063.html">src/test/resources/API/MobileAPIFeatures/Homepage/MainHomepageQuestions.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_1287359789.html">@Sanity</a>
+       <a href="report-tag_2209050847.html">@POST</a>
+       <a href="report-tag_2226523296.html">@Regression</a>
+       <a href="report-tag_2677254380.html">@Questions</a>
+       <a href="report-tag_4059758862.html">@Smoke</a>
+       <a href="report-tag_2377930934.html">@PostMainHomeAnswerQuestions</a>
+       <a href="report-tag_1128156417.html">@Mobile</a>
+       <a href="report-tag_2857067814.html">@MainHomepage</a>
+       <a href="report-tag_4173765225.html">@MobileApiTest</a>
+</div>
+
+
+  <span class="lead-duration duration">12.672</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">API for Post Answers Questions on Homepage (v2)</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def featureToBeUsed = read('../Login/Authentication.feature@RegisteredUserLogin')</span>
+
+  <span class="lead-duration duration">0.009</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def result = call featureToBeUsed</span>
+
+  <span class="lead-duration duration">2.075</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">src/test/resources/API/MobileAPIFeatures/Homepage/../Login/Authentication.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url startingURL+'sharedservice'+endingUrl</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># * url 'https://vwdf4zbj02.execute-api.us-east-1.amazonaws.com/optimization'</div>
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def JavaData = Java.type('DataReader.JavaFunctionsAPI.com.veritec.automation.EnvConfig')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def JavaFunctions = Java.type('JavaFunctionsAPI.com.veritec.automation.ReusableFunctions')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def payloadsData = read('../../payloads/devDataAPI.json')</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def pathsTo = read('../../support/paths.json')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def paramsTo = read('../../support/params.json')</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def headersTo = read('../../support/headers.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def featureToBeUsed = read('@UserRegistrationWithKey')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def result = call featureToBeUsed</span>
+
+  <span class="lead-duration duration">1.104</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; passed">
+  <span class="keyword indention">&gt;</span>
+  <span class="name">src/test/resources/API/MobileAPIFeatures/Homepage/../Login/Authentication.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">url startingURL+'sharedservice'+endingUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># * url 'https://vwdf4zbj02.execute-api.us-east-1.amazonaws.com/optimization'</div>
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">def JavaData = Java.type('DataReader.JavaFunctionsAPI.com.veritec.automation.EnvConfig')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">def JavaFunctions = Java.type('JavaFunctionsAPI.com.veritec.automation.ReusableFunctions')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">def payloadsData = read('../../payloads/devDataAPI.json')</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">def pathsTo = read('../../support/paths.json')</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">def paramsTo = read('../../support/params.json')</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">def headersTo = read('../../support/headers.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">def CreateAccountPayload = payloadsData.CreateAccount.ValidDetails</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">CreateAccountPayload[&quot;email&quot;] = JavaData.configFinalRandomEmail</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">CreateAccountPayload[&quot;username&quot;] = JavaData.configUserName</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">CreateAccountPayload[&quot;password&quot;] = JavaData.configRandomPassword</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">CreateAccountPayload[&quot;secret&quot;] = JavaData.getSecretToken()</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; Given passed">
+  <span class="keyword indention">&gt;&gt; Given</span>
+  <span class="name">path pathsTo.MobileAPI.Registration</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">request CreateAccountPayload</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; When passed">
+  <span class="keyword indention">&gt;&gt; When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">1.055</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>22:23:02.102 request:
+1 &gt; POST https://dev.sharedservice.api.by433.com/api/auth/register
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 499
+1 &gt; Host: dev.sharedservice.api.by433.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;first_name&quot;:&quot;Auto&quot;,&quot;last_name&quot;:&quot;Mation&quot;,&quot;email&quot;:&quot;Auto0111222300826@yopmail.com&quot;,&quot;username&quot;:&quot;Auto0111222300826&quot;,&quot;date_of_birth&quot;:&quot;1989-09-19&quot;,&quot;password&quot;:&quot;Admin123!&quot;,&quot;jersey_number&quot;:7,&quot;was_demo&quot;:false,&quot;device_token&quot;:&quot;&quot;,&quot;isPromotionEmail&quot;:true,&quot;test_user&quot;:true,&quot;secret&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InRlYW0iOiJRQSIsInB1cnBvc2UiOiJ1c2Vycy1sb2FkLXRlc3RpbmcifSwiaWF0IjoxNjY2MDgyMjM3LCJhdWQiOiJbb2JqZWN0IE9iamVjdF0iLCJpc3MiOiI0MzMtZGV2In0.KZS7RJMFd_If6gNEAa-IAsgZEZfj8FK5ZTaZu-C_x0k&quot;}
+
+22:23:03.148 response time in milliseconds: 1044
+1 &lt; 200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 92
+1 &lt; Connection: keep-alive
+1 &lt; Date: Wed, 11 Jan 2023 17:23:03 GMT
+1 &lt; x-amzn-RequestId: 63870575-a537-4bc5-bfc1-71e64a460911
+1 &lt; access-control-allow-origin: *
+1 &lt; x-amzn-Remapped-content-length: 92
+1 &lt; x-amz-apigw-id: elqCnFIsIAMF0BQ=
+1 &lt; etag: W/&quot;5c-5xtsjdMK1DcNAB+hChPtHXXRAzI&quot;
+1 &lt; x-powered-by: Express
+1 &lt; X-Amzn-Trace-Id: Root=1-63bef076-6c76e5210b2b1a2767c52d9e
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 1d57a231e42e3eef58e0453d8bd544ee.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: DXB53-P1
+1 &lt; X-Amz-Cf-Id: y-G10if-Ej79SlL-avKEReSsoXLHlgm7Tgc1PdNAEUjs9TaenmnYjA==
+{&quot;response&quot;:true,&quot;status_code&quot;:200,&quot;message&quot;:&quot;Account created successfully&quot;,&quot;error_msgs&quot;:{}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; Then passed">
+  <span class="keyword indention">&gt;&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">match response.status_code == 200</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># To check the response message</div>
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">match response.message == &quot;Account created successfully&quot;</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># To check the data type of response</div>
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">match response.message == '#string'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># To check contains</div>
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">match response.message contains &quot;Account&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def RegisteredUserLoginPayload = payloadsData.LoginCredentials.RegisteredUser_Login</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">RegisteredUserLoginPayload[&quot;email&quot;] = JavaData.configFinalRandomEmail</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">RegisteredUserLoginPayload[&quot;password&quot;] = JavaData.configRandomPassword</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path pathsTo.MobileAPI.Login</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request RegisteredUserLoginPayload</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.928</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>22:23:03.185 request:
+1 &gt; POST https://dev.sharedservice.api.by433.com/api/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 64
+1 &gt; Host: dev.sharedservice.api.by433.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;Auto0111222300826@yopmail.com&quot;,&quot;password&quot;:&quot;Admin123!&quot;}
+
+22:23:04.105 response time in milliseconds: 918
+1 &lt; 200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 1942
+1 &lt; Connection: keep-alive
+1 &lt; Date: Wed, 11 Jan 2023 17:23:04 GMT
+1 &lt; x-amzn-RequestId: 235d5c74-dadf-4367-b702-5e9187675b47
+1 &lt; access-control-allow-origin: *
+1 &lt; x-amzn-Remapped-content-length: 1942
+1 &lt; x-amz-apigw-id: elqCyHIaIAMFu0w=
+1 &lt; etag: W/&quot;796-ZDTB2ER1dxmWCxiqAcnVj5t2Q7k&quot;
+1 &lt; x-powered-by: Express
+1 &lt; X-Amzn-Trace-Id: Root=1-63bef078-64e1c6206055b55e523d53ae
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 2bcae0923c1ed6153bca9609986af592.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: DXB53-P1
+1 &lt; X-Amz-Cf-Id: RINmArgCHIWj9TBLR8QHW3-pnj3Wx5rPOVIZtUZYz-yTYGnwAnSGIA==
+{&quot;response&quot;:true,&quot;status_code&quot;:200,&quot;message&quot;:&quot;User logged in successfully &quot;,&quot;error_msgs&quot;:{},&quot;data&quot;:{&quot;user&quot;:{&quot;id&quot;:&quot;63bef07746b572bf87c7433c&quot;,&quot;first_name&quot;:&quot;Auto&quot;,&quot;last_name&quot;:&quot;Mation&quot;,&quot;gender&quot;:null,&quot;date_of_birth&quot;:&quot;1989-09-19T00:00:00.000Z&quot;,&quot;email&quot;:&quot;auto0111222300826@yopmail.com&quot;,&quot;username&quot;:&quot;auto0111222300826&quot;,&quot;profile_picture&quot;:null,&quot;last_seen&quot;:null,&quot;access_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjNiZWYwNzc0NmI1NzJiZjg3Yzc0MzNjIiwiZmlyc3RfbmFtZSI6IkF1dG8iLCJsYXN0X25hbWUiOiJNYXRpb24iLCJnZW5kZXIiOm51bGwsImRhdGVfb2ZfYmlydGgiOiIxOTg5LTA5LTE5VDAwOjAwOjAwLjAwMFoiLCJlbWFpbCI6ImF1dG8wMTExMjIyMzAwODI2QHlvcG1haWwuY29tIiwidXNlcm5hbWUiOiJhdXRvMDExMTIyMjMwMDgyNiIsInByb2ZpbGVfcGljdHVyZSI6bnVsbCwibGFzdF9zZWVuIjpudWxsLCJiaW9ncmFwaHkiOiIiLCJub19vZl9mcmllbmRzIjowLCJqZXJzZXlfbnVtYmVyIjo3LCJpc19tYW51YWxfbG9naW4iOnRydWUsIm5vdGlmaWNhdGlvbiI6ZmFsc2UsImlzX2RlbW8iOmZhbHNlLCJkZXZpY2VfdG9rZW4iOm51bGwsInByb2ZpbGVfYWNjZXNzaWJpbGl0eSI6InB1YmxpYyJ9LCJpYXQiOjE2NzM0NTc3ODQsImV4cCI6MTY3MzU0NDE4NCwiYXVkIjoiW29iamVjdCBPYmplY3RdIiwiaXNzIjoiNDMzLWRldiJ9.i0neljf9Em5rP1_sLsWkcrB6DlCt0QJvOlMKh2a_9wI&quot;,&quot;refresh_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjNiZWYwNzc0NmI1NzJiZjg3Yzc0MzNjIiwiZmlyc3RfbmFtZSI6IkF1dG8iLCJsYXN0X25hbWUiOiJNYXRpb24iLCJnZW5kZXIiOm51bGwsImRhdGVfb2ZfYmlydGgiOiIxOTg5LTA5LTE5VDAwOjAwOjAwLjAwMFoiLCJlbWFpbCI6ImF1dG8wMTExMjIyMzAwODI2QHlvcG1haWwuY29tIiwidXNlcm5hbWUiOiJhdXRvMDExMTIyMjMwMDgyNiIsInByb2ZpbGVfcGljdHVyZSI6bnVsbCwibGFzdF9zZWVuIjpudWxsLCJiaW9ncmFwaHkiOiIiLCJub19vZl9mcmllbmRzIjowLCJqZXJzZXlfbnVtYmVyIjo3LCJpc19tYW51YWxfbG9naW4iOnRydWUsIm5vdGlmaWNhdGlvbiI6ZmFsc2UsImlzX2RlbW8iOmZhbHNlLCJkZXZpY2VfdG9rZW4iOm51bGwsInByb2ZpbGVfYWNjZXNzaWJpbGl0eSI6InB1YmxpYyJ9LCJpYXQiOjE2NzM0NTc3ODR9.GRTQVIlmIKvoLsfe7dnJusyG3ZrTp5h6r1uHCShemoA&quot;,&quot;biography&quot;:&quot;&quot;,&quot;no_of_friends&quot;:0,&quot;jersey_number&quot;:7,&quot;is_manual_login&quot;:true,&quot;notification&quot;:false,&quot;is_demo&quot;:false,&quot;device_token&quot;:null,&quot;profile_accessibility&quot;:&quot;public&quot;}}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response.status_code == 200</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response.message == &quot;User logged in successfully &quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response.data.user.access_token != null</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def accessToken = &quot;Bearer &quot;+response.data.user.access_token</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">headersToBeUsed[&quot;Authorization&quot;] = result.accessToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def featureToBeUsed = read('@GetMainHomeQuestions')</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def result = call featureToBeUsed</span>
+
+  <span class="lead-duration duration">2.750</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">src/test/resources/API/MobileAPIFeatures/Homepage/MainHomepageQuestions.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url startingURL+'homemedia'+endingUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def JavaData = Java.type('DataReader.JavaFunctionsAPI.com.veritec.automation.EnvConfig')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def JavaFunctions = Java.type('JavaFunctionsAPI.com.veritec.automation.ReusableFunctions')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def payloadsData = read('../../payloads/devDataAPI.json')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def pathsTo = read('../../support/paths.json')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def paramsTo = read('../../support/params.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def headersTo = read('../../support/headers.json')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def headersToBeUsed = headersTo.CommonHeaders</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def featureToBeUsed = read('../Login/Login.feature@ValidUserLogin')</span>
+
+  <span class="lead-duration duration">0.008</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def result = call featureToBeUsed</span>
+
+  <span class="lead-duration duration">0.918</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; passed">
+  <span class="keyword indention">&gt;</span>
+  <span class="name">src/test/resources/API/MobileAPIFeatures/Homepage/../Login/Login.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">url startingURL+'sharedservice'+endingUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">def JavaData = Java.type('DataReader.JavaFunctionsAPI.com.veritec.automation.EnvConfig')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">def payloadsData = read('../../payloads/devDataAPI.json')</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">def pathsTo = read('../../support/paths.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">def RegisteredUserLoginPayload = payloadsData.LoginCredentials.RegisteredUser_Login</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">RegisteredUserLoginPayload[&quot;email&quot;] = JavaData.configEmail</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">RegisteredUserLoginPayload[&quot;password&quot;] = JavaData.configPassword</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; Given passed">
+  <span class="keyword indention">&gt;&gt; Given</span>
+  <span class="name">path pathsTo.MobileAPI.Login</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">request RegisteredUserLoginPayload</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; When passed">
+  <span class="keyword indention">&gt;&gt; When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.891</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>22:23:04.187 request:
+1 &gt; POST https://dev.sharedservice.api.by433.com/api/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 51
+1 &gt; Host: dev.sharedservice.api.by433.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;moiz@yopmail.com&quot;,&quot;password&quot;:&quot;Admin@123&quot;}
+
+22:23:05.068 response time in milliseconds: 880
+1 &lt; 200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 2920
+1 &lt; Connection: keep-alive
+1 &lt; Date: Wed, 11 Jan 2023 17:23:05 GMT
+1 &lt; x-amzn-RequestId: 2a638679-9124-4032-b513-423254c258f6
+1 &lt; access-control-allow-origin: *
+1 &lt; x-amzn-Remapped-content-length: 2920
+1 &lt; x-amz-apigw-id: elqC8EZaIAMF0OQ=
+1 &lt; etag: W/&quot;b68-/44a4OCoWR1SVCuXuFrLRlPU5cM&quot;
+1 &lt; x-powered-by: Express
+1 &lt; X-Amzn-Trace-Id: Root=1-63bef079-170333745e236e494910d680
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 265b2251d8f4bff865cf758f596b8e88.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: DXB53-P1
+1 &lt; X-Amz-Cf-Id: pgUwpKYNJiyjv2ouHhqy_v1YvTYujwP9t7306YFTHzzVK0jB-xAQSQ==
+{&quot;response&quot;:true,&quot;status_code&quot;:200,&quot;message&quot;:&quot;User logged in successfully &quot;,&quot;error_msgs&quot;:{},&quot;data&quot;:{&quot;user&quot;:{&quot;id&quot;:&quot;6321d2c2f044db04234bdb2b&quot;,&quot;first_name&quot;:&quot;New&quot;,&quot;last_name&quot;:&quot;User&quot;,&quot;gender&quot;:1,&quot;date_of_birth&quot;:&quot;1996-12-12T00:00:00.000Z&quot;,&quot;email&quot;:&quot;moiz@yopmail.com&quot;,&quot;username&quot;:&quot;user3344&quot;,&quot;profile_picture&quot;:&quot;bucket file path&quot;,&quot;last_seen&quot;:&quot;2022-10-31T06:41:31.000Z&quot;,&quot;access_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjMyMWQyYzJmMDQ0ZGIwNDIzNGJkYjJiIiwiZmlyc3RfbmFtZSI6Ik5ldyIsImxhc3RfbmFtZSI6IlVzZXIiLCJnZW5kZXIiOjEsImRhdGVfb2ZfYmlydGgiOiIxOTk2LTEyLTEyVDAwOjAwOjAwLjAwMFoiLCJlbWFpbCI6Im1vaXpAeW9wbWFpbC5jb20iLCJ1c2VybmFtZSI6InVzZXIzMzQ0IiwicHJvZmlsZV9waWN0dXJlIjoiYnVja2V0IGZpbGUgcGF0aCIsImxhc3Rfc2VlbiI6IjIwMjItMTAtMzFUMDY6NDE6MzEuMDAwWiIsImJpb2dyYXBoeSI6IiIsIm5vX29mX2ZyaWVuZHMiOjAsImplcnNleV9udW1iZXIiOjcsImlzX21hbnVhbF9sb2dpbiI6dHJ1ZSwibm90aWZpY2F0aW9uIjpmYWxzZSwiaXNfZGVtbyI6ZmFsc2UsImRldmljZV90b2tlbiI6bnVsbCwicHJvZmlsZV9hY2Nlc3NpYmlsaXR5IjoicHVibGljIn0sImlhdCI6MTY3MzQ1Nzc4NSwiZXhwIjoxNjczNTQ0MTg1LCJhdWQiOiJbb2JqZWN0IE9iamVjdF0iLCJpc3MiOiI0MzMtZGV2In0.zzgWMZSfPNT00Z3TNCKpm24I2JVhFvpiXEW_PzTc_SQ&quot;,&quot;refresh_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjMyMWQyYzJmMDQ0ZGIwNDIzNGJkYjJiIiwiZmlyc3RfbmFtZSI6IkRlbW8iLCJsYXN0X25hbWUiOiJVc2VyIiwiZ2VuZGVyIjoxLCJkYXRlX29mX2JpcnRoIjoiMTk5Ni0xMi0xMlQwMDowMDowMC4wMDBaIiwiZW1haWwiOiJtb2l6QHlvcG1haWwuY29tIiwidXNlcm5hbWUiOiJ1c2VyMzM0NCIsInByb2ZpbGVfcGljdHVyZSI6ImJ1Y2tldCBmaWxlIHBhdGgiLCJsYXN0X3NlZW4iOm51bGwsImFjY2Vzc190b2tlbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUoxYzJWeUlqcDdJbWxrSWpvaU5qTXlNV1F5WXpKbU1EUTBaR0l3TkRJek5HSmtZakppSWl3aVptbHljM1JmYm1GdFpTSTZJa1JsYlc4aUxDSnNZWE4wWDI1aGJXVWlPaUpWYzJWeUlpd2laMlZ1WkdWeUlqb3hMQ0prWVhSbFgyOW1YMkpwY25Sb0lqb2lNVGs1TmkweE1pMHhNbFF3TURvd01Eb3dNQzR3TURCYUlpd2laVzFoYVd3aU9pSnRiMmw2UUhsdmNHMWhhV3d1WTI5dElpd2lkWE5sY201aGJXVWlPaUoxYzJWeU16TTBOQ0lzSW5CeWIyWnBiR1ZmY0dsamRIVnlaU0k2SW1KMVkydGxkQ0JtYVd4bElIQmhkR2dpTENKc1lYTjBYM05sWlc0aU9tNTFiR3dzSW1KcGIyZHlZWEJvZVNJNklpSXNJbTV2WDI5bVgyWnlhV1Z1WkhNaU9qQXNJbXBsY25ObGVWOXVkVzFpWlhJaU9qY3NJbWx6WDIxaGJuVmhiRjlzYjJkcGJpSTZkSEoxWlN3aWJtOTBhV1pwWTJGMGFXOXVJanAwY25WbExDSnBjMTlrWlcxdklqcG1ZV3h6WlN3aVpHVjJhV05sWDNSdmEyVnVJanB1ZFd4c0xDSndjbTltYVd4bFgyRmpZMlZ6YzJsaWFXeHBkSGtpT2lKd2RXSnNhV01pZlN3aWFXRjBJam94TmpZek1UWXhNVGt3TENKbGVIQWlPakUyTmpNeU5EYzFPVEFzSW1GMVpDSTZJbHR2WW1wbFkzUWdUMkpxWldOMFhTSXNJbWx6Y3lJNklqUXpNeTFrWlhZaWZRLjI3TDBXNS1USC1kaFZLeC1yaDhzWGFpWF9fZjY2aXhSVTBhMzNHQ3NUQWsiLCJiaW9ncmFwaHkiOiIiLCJub19vZl9mcmllbmRzIjowLCJqZXJzZXlfbnVtYmVyIjo3LCJpc19tYW51YWxfbG9naW4iOnRydWUsIm5vdGlmaWNhdGlvbiI6dHJ1ZSwiaXNfZGVtbyI6ZmFsc2UsImRldmljZV90b2tlbiI6bnVsbCwicHJvZmlsZV9hY2Nlc3NpYmlsaXR5IjoicHVibGljIn0sImlhdCI6MTY2MzE2MTE5MH0.wfk4we3Vtg31rhJegNI26XyANN8ZFK3dlAaA96qItFY&quot;,&quot;biography&quot;:&quot;&quot;,&quot;no_of_friends&quot;:0,&quot;jersey_number&quot;:7,&quot;is_manual_login&quot;:true,&quot;notification&quot;:false,&quot;is_demo&quot;:false,&quot;device_token&quot;:null,&quot;profile_accessibility&quot;:&quot;public&quot;}}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; Then passed">
+  <span class="keyword indention">&gt;&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">match response.status_code == 200</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">match response.message == &quot;User logged in successfully &quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">match response.data.user.access_token != null</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">def accessToken = &quot;Bearer &quot;+response.data.user.access_token</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def headersToBeUsed = headersTo.CommonHeaders</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">headersToBeUsed[&quot;Authorization&quot;] = result.accessToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path pathsTo.MobileAPI.Questions</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">headers headersToBeUsed</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method GET</span>
+
+  <span class="lead-duration duration">0.902</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>22:23:05.093 request:
+1 &gt; GET https://dev.homemedia.api.by433.com/v2/questions
+1 &gt; Content-Type: application/json
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip, deflate, br
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjMyMWQyYzJmMDQ0ZGIwNDIzNGJkYjJiIiwiZmlyc3RfbmFtZSI6Ik5ldyIsImxhc3RfbmFtZSI6IlVzZXIiLCJnZW5kZXIiOjEsImRhdGVfb2ZfYmlydGgiOiIxOTk2LTEyLTEyVDAwOjAwOjAwLjAwMFoiLCJlbWFpbCI6Im1vaXpAeW9wbWFpbC5jb20iLCJ1c2VybmFtZSI6InVzZXIzMzQ0IiwicHJvZmlsZV9waWN0dXJlIjoiYnVja2V0IGZpbGUgcGF0aCIsImxhc3Rfc2VlbiI6IjIwMjItMTAtMzFUMDY6NDE6MzEuMDAwWiIsImJpb2dyYXBoeSI6IiIsIm5vX29mX2ZyaWVuZHMiOjAsImplcnNleV9udW1iZXIiOjcsImlzX21hbnVhbF9sb2dpbiI6dHJ1ZSwibm90aWZpY2F0aW9uIjpmYWxzZSwiaXNfZGVtbyI6ZmFsc2UsImRldmljZV90b2tlbiI6bnVsbCwicHJvZmlsZV9hY2Nlc3NpYmlsaXR5IjoicHVibGljIn0sImlhdCI6MTY3MzQ1Nzc4NSwiZXhwIjoxNjczNTQ0MTg1LCJhdWQiOiJbb2JqZWN0IE9iamVjdF0iLCJpc3MiOiI0MzMtZGV2In0.zzgWMZSfPNT00Z3TNCKpm24I2JVhFvpiXEW_PzTc_SQ
+1 &gt; Host: dev.homemedia.api.by433.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+
+
+22:23:05.984 response time in milliseconds: 890
+1 &lt; 200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Connection: keep-alive
+1 &lt; Date: Wed, 11 Jan 2023 17:23:06 GMT
+1 &lt; x-amzn-RequestId: bf6f9b1f-3ec5-4ac8-aa33-65d1f3270cc6
+1 &lt; referrer-policy: no-referrer
+1 &lt; x-dns-prefetch-control: off
+1 &lt; x-permitted-cross-domain-policies: none
+1 &lt; x-xss-protection: 0
+1 &lt; access-control-allow-origin: *
+1 &lt; expect-ct: max-age=0
+1 &lt; strict-transport-security: max-age=15552000; includeSubDomains
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; content-security-policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+1 &lt; origin-agent-cluster: ?1
+1 &lt; cross-origin-embedder-policy: require-corp
+1 &lt; x-download-options: noopen
+1 &lt; cross-origin-opener-policy: same-origin
+1 &lt; x-amz-apigw-id: elqDFFC1IAMFaJQ=
+1 &lt; vary: Accept-Encoding
+1 &lt; x-content-type-options: nosniff
+1 &lt; etag: W/&quot;1bc3-EX556Ml0sJG5tJHRjzdMRA9LvVo&quot;
+1 &lt; x-powered-by: BACKEND REPO :)
+1 &lt; cross-origin-resource-policy: same-origin
+1 &lt; X-Amzn-Trace-Id: Root=1-63bef079-1755b543654e06665caaaf17;Sampled=0
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 403d5fc335dc36182625f109b2ab4474.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: DXB53-P1
+1 &lt; X-Amz-Cf-Id: 0TdfdNYDTedrETqmwdzp5Sp9KW6WsQlHnmJOXEwi9scLyLVtkNdSnA==
+{&quot;response&quot;:true,&quot;status_code&quot;:200,&quot;message&quot;:&quot;Success&quot;,&quot;error_msgs&quot;:[],&quot;meta_data&quot;:{},&quot;data&quot;:{&quot;total_records&quot;:10,&quot;total_polls&quot;:4,&quot;total_quizzes&quot;:6,&quot;result_summery_poll&quot;:{&quot;id&quot;:&quot;63bbd81f02ae442d64f915f2&quot;,&quot;results_title&quot;:&quot;THANKS, SEE YOU NEXT TIME!&quot;,&quot;results_image&quot;:&quot;media/photos/3a4ffcab-42a6-4926-9e12-10542a5c8f09.jpeg&quot;},&quot;result_summery_quiz&quot;:{&quot;id&quot;:&quot;63bbd58802ae442d64f91590&quot;,&quot;positive_results_title&quot;:&quot;GREAT JOB!&quot;,&quot;positive_results_image&quot;:&quot;media/photos/3a4ffcab-42a6-4926-9e12-10542a5c8f09.jpeg&quot;,&quot;negative_results_title&quot;:&quot;BETTER LUCK NEXT TIME!&quot;,&quot;negative_results_image&quot;:&quot;media/photos/3a4ffcab-42a6-4926-9e12-10542a5c8f09.jpeg&quot;},&quot;records&quot;:[{&quot;id&quot;:&quot;63bbd81f02ae442d64f915f3&quot;,&quot;meta_id&quot;:&quot;63bbd81f02ae442d64f915f2&quot;,&quot;question&quot;:&quot;P1&quot;,&quot;question_type&quot;:&quot;poll&quot;,&quot;image&quot;:&quot;media/photos/f4e13760-a017-4942-a515-c7f8b7d7e26a.png&quot;,&quot;total_question_participants&quot;:7,&quot;position&quot;:1,&quot;answers&quot;:[{&quot;id&quot;:&quot;63bbd81f02ae442d64f915f8&quot;,&quot;answer_type&quot;:&quot;&quot;,&quot;answer&quot;:&quot;A1&quot;,&quot;position&quot;:0,&quot;total_answer_participants&quot;:7,&quot;is_answered&quot;:true,&quot;my_answer&quot;:{&quot;_id&quot;:&quot;63bee9a00fc46cb1354dd8ae&quot;,&quot;question_id&quot;:&quot;63bbd81f02ae442d64f915f3&quot;,&quot;answer_id&quot;:&quot;63bbd81f02ae442d64f915f8&quot;,&quot;user_id&quot;:&quot;6321d2c2f044db04234bdb2b&quot;}},{&quot;id&quot;:&quot;63bbd81f02ae442d64f915f9&quot;,&quot;answer_type&quot;:&quot;&quot;,&quot;answer&quot;:&quot;A2&quot;,&quot;position&quot;:1,&quot;total_answer_participants&quot;:0,&quot;is_answered&quot;:false,&quot;my_answer&quot;:{}}],&quot;end_date&quot;:&quot;&quot;,&quot;created_at&quot;:&quot;2023-01-09T09:02:23.970Z&quot;},{&quot;id&quot;:&quot;63bbd58802ae442d64f91591&quot;,&quot;meta_id&quot;:&quot;63bbd58802ae442d64f91590&quot;,&quot;question&quot;:&quot;Q1&quot;,&quot;question_type&quot;:&quot;quiz&quot;,&quot;image&quot;:&quot;media/photos/71db2a7a-7021-4ea3-86f0-1eb6edc0f0e1.jpeg&quot;,&quot;total_question_participants&quot;:6,&quot;position&quot;:1,&quot;answers&quot;:[{&quot;id&quot;:&quot;63bbd58802ae442d64f91599&quot;,&quot;answer_type&quot;:&quot;wrong_answer_1&quot;,&quot;answer&quot;:&quot;WW&quot;,&quot;position&quot;:0,&quot;total_answer_participants&quot;:5,&quot;is_answered&quot;:false,&quot;my_answer&quot;:{}},{&quot;id&quot;:&quot;63bbd58802ae442d64f91598&quot;,&quot;answer_type&quot;:&quot;right_answer&quot;,&quot;answer&quot;:&quot;R1&quot;,&quot;position&quot;:1,&quot;total_answer_participants&quot;:1,&quot;is_answered&quot;:false,&quot;my_answer&quot;:{}}],&quot;end_date&quot;:&quot;&quot;,&quot;created_at&quot;:&quot;2023-01-09T08:51:20.210Z&quot;},{&quot;id&quot;:&quot;63bbd81f02ae442d64f915f4&quot;,&quot;meta_id&quot;:&quot;63bbd81f02ae442d64f915f2&quot;,&quot;question&quot;:&quot;P2&quot;,&quot;question_type&quot;:&quot;poll&quot;,&quot;image&quot;:&quot;media/photos/e81f0f12-fa3e-467f-81ce-8998335fad7e.png&quot;,&quot;total_question_participants&quot;:2,&quot;position&quot;:2,&quot;answers&quot;:[{&quot;id&quot;:&quot;63bbd81f02ae442d64f915fb&quot;,&quot;answer_type&quot;:&quot;&quot;,&quot;answer&quot;:&quot;A1&quot;,&quot;position&quot;:0,&quot;total_answer_participants&quot;:1,&quot;is_answered&quot;:false,&quot;my_answer&quot;:{}},{&quot;id&quot;:&quot;63bbd81f02ae442d64f915fc&quot;,&quot;answer_type&quot;:&quot;&quot;,&quot;answer&quot;:&quot;A2&quot;,&quot;position&quot;:1,&quot;total_answer_participants&quot;:1,&quot;is_answered&quot;:false,&quot;my_answer&quot;:{}},{&quot;id&quot;:&quot;63bbd81f02ae442d64f915fd&quot;,&quot;answer_type&quot;:&quot;&quot;,&quot;answer&quot;:&quot;A3&quot;,&quot;position&quot;:2,&quot;total_answer_participants&quot;:0,&quot;is_answered&quot;:false,&quot;my_answer&quot;:{}}],&quot;end_date&quot;:&quot;&quot;,&quot;created_at&quot;:&quot;2023-01-09T09:02:23.970Z&quot;},{&quot;id&quot;:&quot;63bbd58802ae442d64f91592&quot;,&quot;meta_id&quot;:&quot;63bbd58802ae442d64f91590&quot;,&quot;question&quot;:&quot;Q2&quot;,&quot;question_type&quot;:&quot;quiz&quot;,&quot;image&quot;:&quot;media/photos/325cce39-2d70-4d6c-ac13-c3631b57031d.jpeg&quot;,&quot;total_question_participants&quot;:4,&quot;position&quot;:2,&quot;answers&quot;:[{&quot;id&quot;:&quot;63bbd58802ae442d64f9159b&quot;,&quot;answer_type&quot;:&quot;right_answer&quot;,&quot;answer&quot;:&quot;R&quot;,&quot;position&quot;:0,&quot;total_answer_participants&quot;:4,&quot;is_answered&quot;:false,&quot;my_answer&quot;:{}},{&quot;id&quot;:&quot;63bbd58802ae442d64f9159c&quot;,&quot;answer_type&quot;:&quot;wrong_answer_1&quot;,&quot;answer&quot;:&quot;W&quot;,&quot;position&quot;:1,&quot;total_answer_participants&quot;:0,&quot;is_answered&quot;:false,&quot;my_answer&quot;:{}}],&quot;end_date&quot;:&quot;&quot;,&quot;created_at&quot;:&quot;2023-01-09T08:51:20.210Z&quot;},{&quot;id&quot;:&quot;63bbd81f02ae442d64f915f5&quot;,&quot;meta_id&quot;:&quot;63bbd81f02ae442d64f915f2&quot;,&quot;question&quot;:&quot;P3&quot;,&quot;question_type&quot;:&quot;poll&quot;,&quot;image&quot;:&quot;media/photos/fec17668-e61b-436a-ab3e-482098f01735.png&quot;,&quot;total_question_participants&quot;:1,&quot;position&quot;:3,&quot;answers&quot;:[{&quot;id&quot;:&quot;63bbd81f02ae442d64f915ff&quot;,&quot;answer_type&quot;:&quot;&quot;,&quot;answer&quot;:&quot;A1&quot;,&quot;position&quot;:0,&quot;total_answer_participants&quot;:1,&quot;is_answered&quot;:false,&quot;my_answer&quot;:{}},{&quot;id&quot;:&quot;63bbd81f02ae442d64f91600&quot;,&quot;answer_type&quot;:&quot;&quot;,&quot;answer&quot;:&quot;A2&quot;,&quot;position&quot;:1,&quot;total_answer_participants&quot;:0,&quot;is_answered&quot;:false,&quot;my_answer&quot;:{}}],&quot;end_date&quot;:&quot;&quot;,&quot;created_at&quot;:&quot;2023-01-09T09:02:23.970Z&quot;},{&quot;id&quot;:&quot;63bbd58802ae442d64f91593&quot;,&quot;meta_id&quot;:&quot;63bbd58802ae442d64f91590&quot;,&quot;question&quot;:&quot;Q3&quot;,&quot;question_type&quot;:&quot;quiz&quot;,&quot;image&quot;:&quot;media/photos/6843dcf3-95e6-4c1e-bdb0-a629ef364ffc.jpeg&quot;,&quot;total_question_participants&quot;:3,&quot;position&quot;:3,&quot;answers&quot;:[{&quot;id&quot;:&quot;63bbd58802ae442d64f9159f&quot;,&quot;answer_type&quot;:&quot;wrong_answer_1&quot;,&quot;answer&quot;:&quot;W&quot;,&quot;position&quot;:0,&quot;total_answer_participants&quot;:0,&quot;is_answered&quot;:false,&quot;my_answer&quot;:{}},{&quot;id&quot;:&quot;63bbd58802ae442d64f9159e&quot;,&quot;answer_type&quot;:&quot;right_answer&quot;,&quot;answer&quot;:&quot;R&quot;,&quot;position&quot;:1,&quot;total_answer_participants&quot;:3,&quot;is_answered&quot;:false,&quot;my_answer&quot;:{}}],&quot;end_date&quot;:&quot;&quot;,&quot;created_at&quot;:&quot;2023-01-09T08:51:20.210Z&quot;},{&quot;id&quot;:&quot;63bbd81f02ae442d64f915f6&quot;,&quot;meta_id&quot;:&quot;63bbd81f02ae442d64f915f2&quot;,&quot;question&quot;:&quot;P4&quot;,&quot;question_type&quot;:&quot;poll&quot;,&quot;image&quot;:&quot;media/photos/5879f090-5f29-4c9c-b9cc-c6ef678f3db0.png&quot;,&quot;total_question_participants&quot;:1,&quot;position&quot;:4,&quot;answers&quot;:[{&quot;id&quot;:&quot;63bbd81f02ae442d64f91602&quot;,&quot;answer_type&quot;:&quot;&quot;,&quot;answer&quot;:&quot;A1&quot;,&quot;position&quot;:0,&quot;total_answer_participants&quot;:0,&quot;is_answered&quot;:false,&quot;my_answer&quot;:{}},{&quot;id&quot;:&quot;63bbd81f02ae442d64f91603&quot;,&quot;answer_type&quot;:&quot;&quot;,&quot;answer&quot;:&quot;A2&quot;,&quot;position&quot;:1,&quot;total_answer_participants&quot;:1,&quot;is_answered&quot;:false,&quot;my_answer&quot;:{}}],&quot;end_date&quot;:&quot;&quot;,&quot;created_at&quot;:&quot;2023-01-09T09:02:23.970Z&quot;},{&quot;id&quot;:&quot;63bbd58802ae442d64f91594&quot;,&quot;meta_id&quot;:&quot;63bbd58802ae442d64f91590&quot;,&quot;question&quot;:&quot;Q4&quot;,&quot;question_type&quot;:&quot;quiz&quot;,&quot;image&quot;:&quot;media/photos/db232ccb-1c5b-4dd9-b242-e367adca071c.jpeg&quot;,&quot;total_question_participants&quot;:2,&quot;position&quot;:4,&quot;answers&quot;:[{&quot;id&quot;:&quot;63bbd58802ae442d64f915a2&quot;,&quot;answer_type&quot;:&quot;wrong_answer_1&quot;,&quot;answer&quot;:&quot;W&quot;,&quot;position&quot;:0,&quot;total_answer_participants&quot;:2,&quot;is_answered&quot;:false,&quot;my_answer&quot;:{}},{&quot;id&quot;:&quot;63bbd58802ae442d64f915a1&quot;,&quot;answer_type&quot;:&quot;right_answer&quot;,&quot;answer&quot;:&quot;R&quot;,&quot;position&quot;:1,&quot;total_answer_participants&quot;:0,&quot;is_answered&quot;:false,&quot;my_answer&quot;:{}}],&quot;end_date&quot;:&quot;&quot;,&quot;created_at&quot;:&quot;2023-01-09T08:51:20.210Z&quot;},{&quot;id&quot;:&quot;63bbd58802ae442d64f91595&quot;,&quot;meta_id&quot;:&quot;63bbd58802ae442d64f91590&quot;,&quot;question&quot;:&quot;Q5&quot;,&quot;question_type&quot;:&quot;quiz&quot;,&quot;image&quot;:&quot;media/photos/92bd863c-c8ad-44c7-ada6-eb12fd8585f8.jpeg&quot;,&quot;total_question_participants&quot;:2,&quot;position&quot;:5,&quot;answers&quot;:[{&quot;id&quot;:&quot;63bbd58802ae442d64f915a4&quot;,&quot;answer_type&quot;:&quot;right_answer&quot;,&quot;answer&quot;:&quot;R&quot;,&quot;position&quot;:0,&quot;total_answer_participants&quot;:1,&quot;is_answered&quot;:false,&quot;my_answer&quot;:{}},{&quot;id&quot;:&quot;63bbd58802ae442d64f915a5&quot;,&quot;answer_type&quot;:&quot;wrong_answer_1&quot;,&quot;answer&quot;:&quot;W&quot;,&quot;position&quot;:1,&quot;total_answer_participants&quot;:1,&quot;is_answered&quot;:false,&quot;my_answer&quot;:{}}],&quot;end_date&quot;:&quot;&quot;,&quot;created_at&quot;:&quot;2023-01-09T08:51:20.210Z&quot;},{&quot;id&quot;:&quot;63bbd58802ae442d64f91596&quot;,&quot;meta_id&quot;:&quot;63bbd58802ae442d64f91590&quot;,&quot;question&quot;:&quot;Q6&quot;,&quot;question_type&quot;:&quot;quiz&quot;,&quot;image&quot;:&quot;media/photos/6ae788d7-6fb6-48dc-a8b7-164bec2982f7.jpeg&quot;,&quot;total_question_participants&quot;:2,&quot;position&quot;:6,&quot;answers&quot;:[{&quot;id&quot;:&quot;63bbd58802ae442d64f915a7&quot;,&quot;answer_type&quot;:&quot;right_answer&quot;,&quot;answer&quot;:&quot;R&quot;,&quot;position&quot;:0,&quot;total_answer_participants&quot;:0,&quot;is_answered&quot;:false,&quot;my_answer&quot;:{}},{&quot;id&quot;:&quot;63bbd58802ae442d64f915aa&quot;,&quot;answer_type&quot;:&quot;wrong_answer_3&quot;,&quot;answer&quot;:&quot;W&quot;,&quot;position&quot;:1,&quot;total_answer_participants&quot;:0,&quot;is_answered&quot;:false,&quot;my_answer&quot;:{}},{&quot;id&quot;:&quot;63bbd58802ae442d64f915a9&quot;,&quot;answer_type&quot;:&quot;wrong_answer_2&quot;,&quot;answer&quot;:&quot;W&quot;,&quot;position&quot;:2,&quot;total_answer_participants&quot;:1,&quot;is_answered&quot;:false,&quot;my_answer&quot;:{}},{&quot;id&quot;:&quot;63bbd58802ae442d64f915a8&quot;,&quot;answer_type&quot;:&quot;wrong_answer_1&quot;,&quot;answer&quot;:&quot;W&quot;,&quot;position&quot;:3,&quot;total_answer_participants&quot;:1,&quot;is_answered&quot;:false,&quot;my_answer&quot;:{}}],&quot;end_date&quot;:&quot;&quot;,&quot;created_at&quot;:&quot;2023-01-09T08:51:20.210Z&quot;}]}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response.status_code == 200</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response.message == &quot;Success&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def error_msgs = response.error_msgs</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">assert error_msgs.length == 0</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response.data.total_records != 0</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match each $..id != ''</span>
+
+  <span class="lead-duration duration">0.024</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match each $..meta_id != ''</span>
+
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match each $..results_title != ''</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match each $..results_image != ''</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match each $..positive_results_title != ''</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match each $..positive_results_image != ''</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match each $..negative_results_title != ''</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match each $..negative_results_image != ''</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match each $..question != ''</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match $..question_type contains any [poll,quiz]</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match each $..image != ''</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match each $..answer !=''</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def Poll_ids = $..[?(@.question_type=='poll')].id</span>
+
+  <span class="lead-duration duration">0.024</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def FirstPoll_ids =  Poll_ids[0]</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def Poll_Answer_Type = $..[?(@.question_type=='poll')]answers..answer_type</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def Poll_Answer_id = karate.jsonPath(response, &quot;$..[?(@.id=='&quot; + FirstPoll_ids + &quot;')]answers..id&quot;)[0]</span>
+
+  <span class="lead-duration duration">0.067</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match each Poll_Answer_Type == ''</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def Quiz_ids = $..[?(@.question_type=='quiz')].id</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def FirstQuiz_ids =  Quiz_ids[1]</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def Quiz_Answer_Type = $..[?(@.question_type=='quiz')]answers..answer_type</span>
+
+  <span class="lead-duration duration">0.017</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def Quiz_Answer_id = karate.jsonPath(response, &quot;$..[?(@.id=='&quot; + FirstPoll_ids + &quot;')]answers..id&quot;)[0]</span>
+
+  <span class="lead-duration duration">0.029</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match each $..Quiz_Answer_Type contains any [right_answer, wrong_answer_1, wrong_answer_2, wrong_answer_3]</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">string jsonResponse = response</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">string JSONSchemaExpected = read('../../schemas/mainHomepageQuestions.json')</span>
+
+  <span class="lead-duration duration">0.012</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">assert JavaFunctions.isValid(jsonResponse,JSONSchemaExpected)</span>
+
+  <span class="lead-duration duration">0.638</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def parameters = paramsTo.AnswerQuestionParams</span>
+
+  <span class="lead-duration duration">0.009</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">parameters[&quot;question_id&quot;] = result.FirstPoll_ids</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">parameters[&quot;answer_id&quot;] = result.Poll_Answer_id</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path pathsTo.MobileAPI.AnswerQuestions</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">params parameters</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">headers headersToBeUsed</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+
+  <span class="lead-duration duration">1.036</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>22:23:06.903 request:
+1 &gt; GET https://dev.homemedia.api.by433.com/v2/questions/answer-question?question_id=63bbd81f02ae442d64f915f3&amp;answer_id=63bbd81f02ae442d64f915f8
+1 &gt; Content-Type: application/json
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip, deflate, br
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjNiZWYwNzc0NmI1NzJiZjg3Yzc0MzNjIiwiZmlyc3RfbmFtZSI6IkF1dG8iLCJsYXN0X25hbWUiOiJNYXRpb24iLCJnZW5kZXIiOm51bGwsImRhdGVfb2ZfYmlydGgiOiIxOTg5LTA5LTE5VDAwOjAwOjAwLjAwMFoiLCJlbWFpbCI6ImF1dG8wMTExMjIyMzAwODI2QHlvcG1haWwuY29tIiwidXNlcm5hbWUiOiJhdXRvMDExMTIyMjMwMDgyNiIsInByb2ZpbGVfcGljdHVyZSI6bnVsbCwibGFzdF9zZWVuIjpudWxsLCJiaW9ncmFwaHkiOiIiLCJub19vZl9mcmllbmRzIjowLCJqZXJzZXlfbnVtYmVyIjo3LCJpc19tYW51YWxfbG9naW4iOnRydWUsIm5vdGlmaWNhdGlvbiI6ZmFsc2UsImlzX2RlbW8iOmZhbHNlLCJkZXZpY2VfdG9rZW4iOm51bGwsInByb2ZpbGVfYWNjZXNzaWJpbGl0eSI6InB1YmxpYyJ9LCJpYXQiOjE2NzM0NTc3ODQsImV4cCI6MTY3MzU0NDE4NCwiYXVkIjoiW29iamVjdCBPYmplY3RdIiwiaXNzIjoiNDMzLWRldiJ9.i0neljf9Em5rP1_sLsWkcrB6DlCt0QJvOlMKh2a_9wI
+1 &gt; Host: dev.homemedia.api.by433.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+
+
+22:23:07.924 response time in milliseconds: 1021
+1 &lt; 200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 910
+1 &lt; Connection: keep-alive
+1 &lt; Date: Wed, 11 Jan 2023 17:23:08 GMT
+1 &lt; x-amzn-RequestId: 5f11f7ea-1b0d-4ab6-856c-ba0085d12df9
+1 &lt; referrer-policy: no-referrer
+1 &lt; x-dns-prefetch-control: off
+1 &lt; x-permitted-cross-domain-policies: none
+1 &lt; x-xss-protection: 0
+1 &lt; access-control-allow-origin: *
+1 &lt; expect-ct: max-age=0
+1 &lt; strict-transport-security: max-age=15552000; includeSubDomains
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; x-amzn-Remapped-content-length: 910
+1 &lt; content-security-policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+1 &lt; origin-agent-cluster: ?1
+1 &lt; cross-origin-embedder-policy: require-corp
+1 &lt; x-download-options: noopen
+1 &lt; cross-origin-opener-policy: same-origin
+1 &lt; x-amz-apigw-id: elqDXFNQoAMFQEA=
+1 &lt; vary: Accept-Encoding
+1 &lt; x-content-type-options: nosniff
+1 &lt; etag: W/&quot;38e-A3HUb/eSgHAzCeOEN11/YmANkbQ&quot;
+1 &lt; x-powered-by: BACKEND REPO :)
+1 &lt; cross-origin-resource-policy: same-origin
+1 &lt; X-Amzn-Trace-Id: Root=1-63bef07b-2a3dafa804b40aca418774b2;Sampled=0
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 30bdcdae61e2992f0e40f36ae3fdced8.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: DXB53-P1
+1 &lt; X-Amz-Cf-Id: QSjm8MztTcI5eSOLv1G47D-nYTfmrvpNSONyzIDI2js-9HWwZIHpkA==
+{&quot;response&quot;:true,&quot;status_code&quot;:200,&quot;message&quot;:&quot;Success&quot;,&quot;error_msgs&quot;:[],&quot;meta_data&quot;:{&quot;answer_id&quot;:&quot;63bbd81f02ae442d64f915f8&quot;,&quot;question_id&quot;:&quot;63bbd81f02ae442d64f915f3&quot;},&quot;data&quot;:{&quot;id&quot;:&quot;63bbd81f02ae442d64f915f3&quot;,&quot;meta_id&quot;:&quot;63bbd81f02ae442d64f915f2&quot;,&quot;question&quot;:&quot;P1&quot;,&quot;question_type&quot;:&quot;poll&quot;,&quot;total_question&quot;:4,&quot;image&quot;:&quot;media/photos/f4e13760-a017-4942-a515-c7f8b7d7e26a.png&quot;,&quot;total_question_participants&quot;:8,&quot;position&quot;:1,&quot;answers&quot;:[{&quot;id&quot;:&quot;63bbd81f02ae442d64f915f8&quot;,&quot;answer_type&quot;:&quot;&quot;,&quot;answer&quot;:&quot;A1&quot;,&quot;position&quot;:0,&quot;total_answer_participants&quot;:8,&quot;is_answered&quot;:true,&quot;my_answer&quot;:{&quot;_id&quot;:&quot;63bef07c13be6cbd03579fd2&quot;,&quot;question_id&quot;:&quot;63bbd81f02ae442d64f915f3&quot;,&quot;answer_id&quot;:&quot;63bbd81f02ae442d64f915f8&quot;,&quot;user_id&quot;:&quot;63bef07746b572bf87c7433c&quot;}},{&quot;id&quot;:&quot;63bbd81f02ae442d64f915f9&quot;,&quot;answer_type&quot;:&quot;&quot;,&quot;answer&quot;:&quot;A2&quot;,&quot;position&quot;:1,&quot;total_answer_participants&quot;:0,&quot;is_answered&quot;:false,&quot;my_answer&quot;:{}}],&quot;end_date&quot;:&quot;&quot;,&quot;created_at&quot;:&quot;2023-01-09T09:02:23.970Z&quot;}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.status_code == 200</span>
+
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.message == &quot;Success&quot;</span>
+
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def error_msgs = response.error_msgs</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">assert error_msgs.length == 0</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

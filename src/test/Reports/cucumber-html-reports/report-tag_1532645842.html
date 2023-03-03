@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Tag: @GetProfile</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Qa-Automation</td>
+      <td>10 Feb 2023, 02:34</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Tag Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Tag</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">@GetProfile</td>
+          <td      class="passed"    >14</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">14</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="1687312458">1.687</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="elements">
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_931125983.html">src/test/resources/API/MobileAPIFeatures/Profile/Profile.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_1287359789.html">@Sanity</a>
+       <a href="report-tag_2149460725.html">@GET</a>
+       <a href="report-tag_2226523296.html">@Regression</a>
+       <a href="report-tag_4059758862.html">@Smoke</a>
+       <a href="report-tag_1128156417.html">@Mobile</a>
+       <a href="report-tag_3373422920.html">@Profile</a>
+       <a href="report-tag_4173765225.html">@MobileApiTest</a>
+       <a href="report-tag_1532645842.html">@GetProfile</a>
+       <a href="report-tag_2208624175.html">@BETA</a>
+</div>
+
+
+  <span class="lead-duration duration">1.687</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">API for Get Profile</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path pathsTo.MobileAPI.Profile</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">headers headersToBeUsed</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+
+  <span class="lead-duration duration">1.219</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>02:34:05.650 request:
+1 &gt; GET https://dev.profile.api.by433.com/api/get-profile
+1 &gt; Content-Type: application/json
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip, deflate, br
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjMyMWQyYzJmMDQ0ZGIwNDIzNGJkYjJiIiwiZmlyc3RfbmFtZSI6Ik5ldyIsImxhc3RfbmFtZSI6IlVzZXIiLCJnZW5kZXIiOjEsImRhdGVfb2ZfYmlydGgiOiIxOTk2LTEyLTEyVDAwOjAwOjAwLjAwMFoiLCJlbWFpbCI6Im1vaXpAeW9wbWFpbC5jb20iLCJ1c2VybmFtZSI6InVzZXIzMzQ0IiwicHJvZmlsZV9waWN0dXJlIjoibWVkaWEvcHJvZmlsZV9waWN0dXJlLzE2NzU5NzA2OTAyMjRfNjAzNzA1OS5qcGVnIiwibGFzdF9zZWVuIjoiMjAyMi0xMC0zMVQwNjo0MTozMS4wMDBaIiwiYmlvZ3JhcGh5IjoiIiwibm9fb2ZfZnJpZW5kcyI6MCwiamVyc2V5X251bWJlciI6NywiaXNfbWFudWFsX2xvZ2luIjp0cnVlLCJub3RpZmljYXRpb24iOmZhbHNlLCJpc19kZW1vIjpmYWxzZSwiZGV2aWNlX3Rva2VuIjpudWxsLCJwcm9maWxlX2FjY2Vzc2liaWxpdHkiOiJwdWJsaWMifSwiaWF0IjoxNjc1OTc4NDQ1LCJleHAiOjE2NzYwNjQ4NDUsImF1ZCI6IltvYmplY3QgT2JqZWN0XSIsImlzcyI6IjQzMy1kZXYifQ.EGGqUwCC-1hOtexW701UahrhR_G3AdsMfnEv3gH1ij0
+1 &gt; Host: dev.profile.api.by433.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+
+
+02:34:06.862 response time in milliseconds: 1210
+1 &lt; 200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 888
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 09 Feb 2023 21:34:07 GMT
+1 &lt; x-amzn-RequestId: 40dc38d7-52f1-4be4-80e2-9873748ad1ad
+1 &lt; access-control-allow-origin: *
+1 &lt; x-amzn-Remapped-content-length: 888
+1 &lt; x-amz-apigw-id: AF0AUH_iIAMFhYQ=
+1 &lt; etag: W/&quot;378-tzFwkBOsvh36OHpiXOjUhRN4xbw&quot;
+1 &lt; x-powered-by: Express
+1 &lt; X-Amzn-Trace-Id: Root=1-63e566ce-243555e42cc756225a1d0aa1;Sampled=0
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 dcd6e057cce5e618bcad0fb78c7054f0.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: FJR50-C1
+1 &lt; X-Amz-Cf-Id: IOfPKcmdkY2IDEYvSbXOAEg7lxeukD0pzMxA2QUHgxQnTtVM3xgzNQ==
+{&quot;response&quot;:true,&quot;status_code&quot;:200,&quot;message&quot;:&quot;Profile&quot;,&quot;error_msgs&quot;:{},&quot;data&quot;:{&quot;user&quot;:{&quot;id&quot;:&quot;6321d2c2f044db04234bdb2b&quot;,&quot;first_name&quot;:&quot;New&quot;,&quot;last_name&quot;:&quot;User&quot;,&quot;gender&quot;:1,&quot;date_of_birth&quot;:&quot;1996-12-12T00:00:00.000Z&quot;,&quot;email&quot;:&quot;moiz@yopmail.com&quot;,&quot;username&quot;:&quot;user3344&quot;,&quot;profile_picture&quot;:&quot;media/profile_picture/1675970690224_6037059.jpeg&quot;,&quot;last_seen&quot;:&quot;2022-10-31T06:41:31.000Z&quot;,&quot;biography&quot;:&quot;&quot;,&quot;no_of_friends&quot;:0,&quot;no_of_requests&quot;:2,&quot;jersey_number&quot;:7,&quot;profile_accessibility&quot;:&quot;public&quot;,&quot;is_manual_login&quot;:true,&quot;favourites&quot;:[],&quot;place_holder&quot;:[{&quot;id&quot;:&quot;47&quot;,&quot;name&quot;:&quot;Premier League&quot;,&quot;logo&quot;:&quot;https://enetpulse-images.s3.amazonaws.com/league/47.png&quot;,&quot;isActive&quot;:true,&quot;type&quot;:&quot;league&quot;},{&quot;id&quot;:&quot;8633&quot;,&quot;name&quot;:&quot;Real Madrid&quot;,&quot;logo&quot;:&quot;https://enetpulse-images.s3.amazonaws.com/team/8633.png&quot;,&quot;type&quot;:&quot;club&quot;},{&quot;id&quot;:&quot;8634&quot;,&quot;name&quot;:&quot;Barcelona&quot;,&quot;logo&quot;:&quot;https://enetpulse-images.s3.amazonaws.com/team/8634.png&quot;,&quot;type&quot;:&quot;club&quot;}]}}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.status_code == 200</span>
+
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.message == &quot;Profile&quot;</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data.user.first_name == &quot;New&quot;</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data.user.last_name == &quot;User&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data.user.email == &quot;moiz@yopmail.com&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data.user.username == &quot;user3344&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def error_msgs = response.error_msgs</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">string jsonResponse = response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">string JSONSchemaExpected = read('../../schemas/Profile.json')</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">assert JavaFunctions.isValid(jsonResponse,JSONSchemaExpected)</span>
+
+  <span class="lead-duration duration">0.439</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

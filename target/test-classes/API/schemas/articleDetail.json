@@ -1,0 +1,632 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "response": {
+      "type": "boolean"
+    },
+    "status_code": {
+      "type": "integer"
+    },
+    "message": {
+      "type": "string"
+    },
+    "error_msgs": {
+      "type": "array",
+      "items": {}
+    },
+    "meta_data": {
+      "type": "object",
+      "properties": {
+        "article_id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "article_id"
+      ]
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "portrait_cover_image": {
+          "type": "string"
+        },
+        "landscape_cover_image": {
+          "type": "string"
+        },
+        "show_comments": {
+          "type": "boolean"
+        },
+        "show_likes": {
+          "type": "boolean"
+        },
+        "author_image": {
+          "type": "string"
+        },
+        "author_text": {
+          "type": "string"
+        },
+        "total_likes": {
+          "type": "integer"
+        },
+        "total_comments": {
+          "type": "integer"
+        },
+        "parent_category": {
+          "type": "string"
+        },
+        "child_category": {
+          "type": "string"
+        },
+        "is_liked": {
+          "type": "integer"
+        },
+        "article_elements": {
+          "type": "array",
+          "items": {
+            "anyOf":[
+
+              {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "element_type": {
+                    "type": "string"
+                  },
+                  "height": {
+                    "type": "integer"
+                  },
+                  "width": {
+                    "type": "integer"
+                  },
+                  "media_url": {
+                    "type": "string"
+                  },
+                  "thumbnail_url": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id",
+                  "element_type",
+                  "height",
+                  "width",
+                  "media_url",
+                  "thumbnail_url"
+                ]
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "element_type": {
+                    "type": "string"
+                  },
+                  "description": {
+                    "type": "string"
+                  },
+                  "total_words": {
+                    "type": "integer"
+                  },
+                  "avg_reading_time": {
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "id",
+                  "element_type",
+                  "description",
+                  "total_words",
+                  "avg_reading_time"
+                ]
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "element_type": {
+                    "type": "string"
+                  },
+                  "description": {
+                    "type": "string"
+                  },
+                  "total_words": {
+                    "type": "integer"
+                  },
+                  "avg_reading_time": {
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "id",
+                  "element_type",
+                  "description",
+                  "total_words",
+                  "avg_reading_time"
+                ]
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "match_id": {
+                    "type": "string"
+                  },
+                  "element_type": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id",
+                  "match_id",
+                  "element_type"
+                ]
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "element_type": {
+                    "type": "string"
+                  },
+                  "question": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "meta_id": {
+                        "type": "string"
+                      },
+                      "question": {
+                        "type": "string"
+                      },
+                      "question_type": {
+                        "type": "string"
+                      },
+                      "total_question": {
+                        "type": "integer"
+                      },
+                      "image": {
+                        "type": "string"
+                      },
+                      "total_question_participants": {
+                        "type": "integer"
+                      },
+                      "position": {
+                        "type": "integer"
+                      },
+                      "answers": {
+                        "type": "array",
+                        "items": [
+                          {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "answer_type": {
+                                "type": "string"
+                              },
+                              "answer": {
+                                "type": "string"
+                              },
+                              "position": {
+                                "type": "integer"
+                              },
+                              "total_answer_participants": {
+                                "type": "integer"
+                              },
+                              "is_answered": {
+                                "type": "boolean"
+                              },
+                              "my_answer": {
+                                "type": "object"
+                              }
+                            },
+                            "required": [
+                              "id",
+                              "answer_type",
+                              "answer",
+                              "position",
+                              "total_answer_participants",
+                              "is_answered",
+                              "my_answer"
+                            ]
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "answer_type": {
+                                "type": "string"
+                              },
+                              "answer": {
+                                "type": "string"
+                              },
+                              "position": {
+                                "type": "integer"
+                              },
+                              "total_answer_participants": {
+                                "type": "integer"
+                              },
+                              "is_answered": {
+                                "type": "boolean"
+                              },
+                              "my_answer": {
+                                "type": "object"
+                              }
+                            },
+                            "required": [
+                              "id",
+                              "answer_type",
+                              "answer",
+                              "position",
+                              "total_answer_participants",
+                              "is_answered",
+                              "my_answer"
+                            ]
+                          }
+                        ]
+                      },
+                      "end_date": {
+                        "type": "string"
+                      },
+                      "created_at": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "meta_id",
+                      "question",
+                      "question_type",
+                      "total_question",
+                      "image",
+                      "total_question_participants",
+                      "position",
+                      "answers",
+                      "end_date",
+                      "created_at"
+                    ]
+                  }
+                },
+                "required": [
+                  "id",
+                  "element_type",
+                  "question"
+                ]
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "element_type": {
+                    "type": "string"
+                  },
+                  "question": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "meta_id": {
+                        "type": "string"
+                      },
+                      "question": {
+                        "type": "string"
+                      },
+                      "question_type": {
+                        "type": "string"
+                      },
+                      "total_question": {
+                        "type": "integer"
+                      },
+                      "image": {
+                        "type": "string"
+                      },
+                      "total_question_participants": {
+                        "type": "integer"
+                      },
+                      "position": {
+                        "type": "integer"
+                      },
+                      "answers": {
+                        "type": "array",
+                        "items": [
+                          {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "answer_type": {
+                                "type": "string"
+                              },
+                              "answer": {
+                                "type": "string"
+                              },
+                              "position": {
+                                "type": "integer"
+                              },
+                              "total_answer_participants": {
+                                "type": "integer"
+                              },
+                              "is_answered": {
+                                "type": "boolean"
+                              },
+                              "my_answer": {
+                                "type": "object"
+                              }
+                            },
+                            "required": [
+                              "id",
+                              "answer_type",
+                              "answer",
+                              "position",
+                              "total_answer_participants",
+                              "is_answered",
+                              "my_answer"
+                            ]
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "answer_type": {
+                                "type": "string"
+                              },
+                              "answer": {
+                                "type": "string"
+                              },
+                              "position": {
+                                "type": "integer"
+                              },
+                              "total_answer_participants": {
+                                "type": "integer"
+                              },
+                              "is_answered": {
+                                "type": "boolean"
+                              },
+                              "my_answer": {
+                                "type": "object"
+                              }
+                            },
+                            "required": [
+                              "id",
+                              "answer_type",
+                              "answer",
+                              "position",
+                              "total_answer_participants",
+                              "is_answered",
+                              "my_answer"
+                            ]
+                          }
+                        ]
+                      },
+                      "end_date": {
+                        "type": "string"
+                      },
+                      "created_at": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "meta_id",
+                      "question",
+                      "question_type",
+                      "total_question",
+                      "image",
+                      "total_question_participants",
+                      "position",
+                      "answers",
+                      "end_date",
+                      "created_at"
+                    ]
+                  }
+                },
+                "required": [
+                  "id",
+                  "element_type",
+                  "question"
+                ]
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "element_type": {
+                    "type": "string"
+                  },
+                  "ig_post_url": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id",
+                  "element_type",
+                  "ig_post_url"
+                ]
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "element_type": {
+                    "type": "string"
+                  },
+                  "twitter_post_url": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id",
+                  "element_type",
+                  "twitter_post_url"
+                ]
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "element_type": {
+                    "type": "string"
+                  },
+                  "height": {
+                    "type": "integer"
+                  },
+                  "width": {
+                    "type": "integer"
+                  },
+                  "media_url": {
+                    "type": "string"
+                  },
+                  "thumbnail_url": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id",
+                  "element_type",
+                  "height",
+                  "width",
+                  "media_url",
+                  "thumbnail_url"
+                ]
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "element_type": {
+                    "type": "string"
+                  },
+                  "description": {
+                    "type": "string"
+                  },
+                  "total_words": {
+                    "type": "integer"
+                  },
+                  "avg_reading_time": {
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "id",
+                  "element_type",
+                  "description",
+                  "total_words",
+                  "avg_reading_time"
+                ]
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "element_type": {
+                    "type": "string"
+                  },
+                  "description": {
+                    "type": "string"
+                  },
+                  "total_words": {
+                    "type": "integer"
+                  },
+                  "avg_reading_time": {
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "id",
+                  "element_type",
+                  "description",
+                  "total_words",
+                  "avg_reading_time"
+                ]
+              }
+            ]
+          }
+        },
+        "total_words": {
+          "type": "integer"
+        },
+        "avg_time": {
+          "type": "string"
+        },
+        "similar_articles": {
+          "type": "array",
+          "items": {}
+        },
+        "created_at": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "description",
+        "portrait_cover_image",
+        "landscape_cover_image",
+        "show_comments",
+        "show_likes",
+        "author_image",
+        "author_text",
+        "total_likes",
+        "total_comments",
+        "parent_category",
+        "child_category",
+        "is_liked",
+        "article_elements",
+        "total_words",
+        "avg_time",
+        "similar_articles",
+        "created_at"
+      ]
+    }
+  },
+  "required": [
+    "response",
+    "status_code",
+    "message",
+    "error_msgs",
+    "meta_data",
+    "data"
+  ]
+}

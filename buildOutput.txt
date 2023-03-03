@@ -1,0 +1,3 @@
+*Total Scenarios* : 1
+*Scenarios Passed* : 1
+*Scenarios Failed* : 0

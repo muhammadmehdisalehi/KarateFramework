@@ -1,0 +1,6 @@
+{
+  "MobileAPI": {
+    "Login": "/api/login",
+    "Stats": "/api/temporary-workers/data/stats"
+  }
+}

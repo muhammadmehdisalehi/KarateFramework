@@ -1,0 +1,149 @@
+{
+  "CreateAccount": {
+    "ValidDetails": {
+      "first_name": "Auto",
+      "last_name":"Mation",
+      "email": "",
+      "username": "",
+      "date_of_birth":"1989-09-19",
+      "password": "",
+      "jersey_number": 7,
+      "was_demo": false,
+      "device_token": "",
+      "isPromotionEmail": true,
+      "test_user": true,
+      "secret": ""
+    },
+    "DemoUser": {
+      "device_token": "odio"
+    },
+    "AutoLogin": {
+      "token": ""
+    },
+    "EmailAvailable": {
+      "email": "vince@by433.com"
+    },
+    "EmailUnavailable": {
+      "email": "autoEmailNotExist@yopmail.com"
+    },
+    "EmailAlreadyExist": {
+      "email": "moiz@yopmail.com"
+    },
+    "VerifyUserName": {
+      "username": "lionelmessi2."
+    },
+    "VerifyUserNameUnavailable": {
+      "username": "alishba433"
+    },
+    "VerifyEmail": {
+      "email_verification_token": ""
+    },
+    "RequestPassword": {
+      "email": "alishba@yopmail.com"
+    },
+    "ResetPassword": {
+      "password": "Admin@123",
+      "password_reset_token": ""
+    }
+  }
+,
+  "LoginCredentials":
+  {
+    "RegisteredUser_Login": {
+      "email_address": "",
+      "password": ""
+    }
+  },
+  "NewsComment":
+  {
+    "ValidNews": {
+      "news_id": "",
+      "comment": "This is a the Breaking news for each"
+    }
+  },
+  "CMSNews": {
+    "ValidNewsData": {
+      "user_data": {
+        "id": "633ebf493d44a57ac48b459f",
+        "first_name": "Moiz",
+        "last_name": "Naqi"
+      },
+      "save_draft": true,
+      "banner_title": "New News",
+      "banner_description": "New News",
+      "show_likes": true,
+      "show_comments": true,
+      "labels": [
+        {
+          "id": "636283a2e634f975434269f6",
+          "name": "FF"
+        },
+        {
+          "id": "636283a2e634f975434269f5",
+          "name": "RMB"
+        },
+        {
+          "id": "63626ac565700a57902f0e74",
+          "name": "GRANDSS"
+        },
+        {
+          "id": "63626a8165700a57902f0e66",
+          "name": "RB"
+        }
+      ],
+      "slides": [
+        {
+          "image": "media/photos/915c303c-35e3-4587-a849-0c16cffa6111.png",
+          "file_name": "download.png",
+          "height": 233,
+          "width": 216,
+          "dropbox_url": "",
+          "description": "asdasd",
+          "title": "Demo News",
+          "name": "Demo",
+          "sort_order": 1
+        }
+      ]
+    },
+    "InValidNewsData": {
+      "user_data": {
+        "id": "633ebf493d44a57ac48b459f",
+        "first_name": "Moiz",
+        "last_name": "Naqi"
+      },
+      "save_draft": true,
+      "banner_title": "New News",
+      "banner_description": "New News",
+      "show_likes": true,
+      "show_comments": true,
+      "labels": [
+      ],
+      "slides": [
+        {
+          "image": "media/photos/915c303c-35e3-4587-a849-0c16cffa6111.png",
+          "file_name": "download.png",
+          "height": 233,
+          "width": 216,
+          "dropbox_url": "",
+          "description": "asdasd",
+          "title": "Demo News",
+          "name": "Demo",
+          "sort_order": 1
+        }
+      ]
+    }
+  },
+  "UpdateProfile": {
+    "first_name": "Test",
+    "last_name": "Updated",
+    "email": "",
+    "gender": 1,
+    "date_of_birth": "1996-12-12",
+    "biography": "This is updated text",
+    "username": "",
+    "jersey_number": 9
+  },
+  "EndSession": {
+    "session_id": ""
+  }
+}

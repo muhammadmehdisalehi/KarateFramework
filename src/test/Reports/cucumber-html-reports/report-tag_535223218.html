@@ -1,0 +1,2145 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Tag: @ViralsLikes</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Qa-Automation</td>
+      <td>09 Feb 2023, 19:09</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Tag Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Tag</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">@ViralsLikes</td>
+          <td      class="passed"    >63</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">63</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="6396119873">6.396</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="elements">
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_3664238143.html">src/test/resources/API/MobileAPIFeatures/Virals/ViralsLikes.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3188340674.html">@ViralsLikesFeature</a>
+       <a href="report-tag_1287359789.html">@Sanity</a>
+       <a href="report-tag_2208743044.html">@Echo</a>
+       <a href="report-tag_2149460725.html">@GET</a>
+       <a href="report-tag_2226523296.html">@Regression</a>
+       <a href="report-tag_4059758862.html">@Smoke</a>
+       <a href="report-tag_1128156417.html">@Mobile</a>
+       <a href="report-tag_4173765225.html">@MobileApiTest</a>
+       <a href="report-tag_535223218.html">@ViralsLikes</a>
+</div>
+
+
+  <span class="lead-duration duration">6.396</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Virals Likes</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def featureToBeUsed = read('../Virals/ViralsListing.feature@ViralsListing')</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def result = call featureToBeUsed</span>
+
+  <span class="lead-duration duration">2.462</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">src/test/resources/API/MobileAPIFeatures/Virals/../Virals/ViralsListing.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url startingURL+'homemedia'+endingUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def JavaData = Java.type('DataReader.JavaFunctionsAPI.com.veritec.automation.EnvConfig')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def JavaFunctions = Java.type('JavaFunctionsAPI.com.veritec.automation.ReusableFunctions')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def payloadsData = read('../../payloads/devDataAPI.json')</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def pathsTo = read('../../support/paths.json')</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def paramsTo = read('../../support/params.json')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def headersTo = read('../../support/headers.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def headersToBeUsed = headersTo.CommonHeaders</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def featureToBeUsed = read('../Login/Login.feature@ValidUserLogin')</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def result = call featureToBeUsed</span>
+
+  <span class="lead-duration duration">0.599</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; passed">
+  <span class="keyword indention">&gt;</span>
+  <span class="name">src/test/resources/API/MobileAPIFeatures/Virals/../Login/Login.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">url startingURL+'sharedservice'+endingUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">def JavaData = Java.type('DataReader.JavaFunctionsAPI.com.veritec.automation.EnvConfig')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">def payloadsData = read('../../payloads/devDataAPI.json')</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">def pathsTo = read('../../support/paths.json')</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">def RegisteredUserLoginPayload = payloadsData.LoginCredentials.RegisteredUser_Login</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">RegisteredUserLoginPayload[&quot;email&quot;] = JavaData.configEmail</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">RegisteredUserLoginPayload[&quot;password&quot;] = JavaData.configPassword</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; Given passed">
+  <span class="keyword indention">&gt;&gt; Given</span>
+  <span class="name">path pathsTo.MobileAPI.Login</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">request RegisteredUserLoginPayload</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; When passed">
+  <span class="keyword indention">&gt;&gt; When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.575</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>19:08:56.421 request:
+1 &gt; POST https://dev.sharedservice.api.by433.com/api/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 51
+1 &gt; Host: dev.sharedservice.api.by433.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;moiz@yopmail.com&quot;,&quot;password&quot;:&quot;Admin@123&quot;}
+
+19:08:56.989 response time in milliseconds: 567
+1 &lt; 200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 2920
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 09 Feb 2023 14:08:57 GMT
+1 &lt; x-amzn-RequestId: 4ad9acde-1ee6-46c0-9e49-c4e7014cd357
+1 &lt; access-control-allow-origin: *
+1 &lt; x-amzn-Remapped-content-length: 2920
+1 &lt; x-amz-apigw-id: AEyy7EuroAMFYZQ=
+1 &lt; etag: W/&quot;b68-0L87BhAPi0SOy4cJnMBS4iJIW4Q&quot;
+1 &lt; x-powered-by: Express
+1 &lt; X-Amzn-Trace-Id: Root=1-63e4fe78-367b21bd1010d73b10c073ec
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 8d5872390d336956b8a01213690e54ac.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: DXB53-P1
+1 &lt; X-Amz-Cf-Id: 5Qnvp5u6ERc2fGeQwAjrbdcblvlpUOd4v0z-Fv5OryoSxiVSUuzSNQ==
+{&quot;response&quot;:true,&quot;status_code&quot;:200,&quot;message&quot;:&quot;User logged in successfully &quot;,&quot;error_msgs&quot;:{},&quot;data&quot;:{&quot;user&quot;:{&quot;id&quot;:&quot;6321d2c2f044db04234bdb2b&quot;,&quot;first_name&quot;:&quot;New&quot;,&quot;last_name&quot;:&quot;User&quot;,&quot;gender&quot;:1,&quot;date_of_birth&quot;:&quot;1996-12-12T00:00:00.000Z&quot;,&quot;email&quot;:&quot;moiz@yopmail.com&quot;,&quot;username&quot;:&quot;user3344&quot;,&quot;profile_picture&quot;:&quot;bucket file path&quot;,&quot;last_seen&quot;:&quot;2022-10-31T06:41:31.000Z&quot;,&quot;access_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjMyMWQyYzJmMDQ0ZGIwNDIzNGJkYjJiIiwiZmlyc3RfbmFtZSI6Ik5ldyIsImxhc3RfbmFtZSI6IlVzZXIiLCJnZW5kZXIiOjEsImRhdGVfb2ZfYmlydGgiOiIxOTk2LTEyLTEyVDAwOjAwOjAwLjAwMFoiLCJlbWFpbCI6Im1vaXpAeW9wbWFpbC5jb20iLCJ1c2VybmFtZSI6InVzZXIzMzQ0IiwicHJvZmlsZV9waWN0dXJlIjoiYnVja2V0IGZpbGUgcGF0aCIsImxhc3Rfc2VlbiI6IjIwMjItMTAtMzFUMDY6NDE6MzEuMDAwWiIsImJpb2dyYXBoeSI6IiIsIm5vX29mX2ZyaWVuZHMiOjAsImplcnNleV9udW1iZXIiOjcsImlzX21hbnVhbF9sb2dpbiI6dHJ1ZSwibm90aWZpY2F0aW9uIjpmYWxzZSwiaXNfZGVtbyI6ZmFsc2UsImRldmljZV90b2tlbiI6bnVsbCwicHJvZmlsZV9hY2Nlc3NpYmlsaXR5IjoicHVibGljIn0sImlhdCI6MTY3NTk1MTczNywiZXhwIjoxNjc2MDM4MTM3LCJhdWQiOiJbb2JqZWN0IE9iamVjdF0iLCJpc3MiOiI0MzMtZGV2In0.XWAPmnsPb7zegejwhljUNJ_J9QsvdEfVUjbwToh-dgg&quot;,&quot;refresh_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjMyMWQyYzJmMDQ0ZGIwNDIzNGJkYjJiIiwiZmlyc3RfbmFtZSI6IkRlbW8iLCJsYXN0X25hbWUiOiJVc2VyIiwiZ2VuZGVyIjoxLCJkYXRlX29mX2JpcnRoIjoiMTk5Ni0xMi0xMlQwMDowMDowMC4wMDBaIiwiZW1haWwiOiJtb2l6QHlvcG1haWwuY29tIiwidXNlcm5hbWUiOiJ1c2VyMzM0NCIsInByb2ZpbGVfcGljdHVyZSI6ImJ1Y2tldCBmaWxlIHBhdGgiLCJsYXN0X3NlZW4iOm51bGwsImFjY2Vzc190b2tlbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUoxYzJWeUlqcDdJbWxrSWpvaU5qTXlNV1F5WXpKbU1EUTBaR0l3TkRJek5HSmtZakppSWl3aVptbHljM1JmYm1GdFpTSTZJa1JsYlc4aUxDSnNZWE4wWDI1aGJXVWlPaUpWYzJWeUlpd2laMlZ1WkdWeUlqb3hMQ0prWVhSbFgyOW1YMkpwY25Sb0lqb2lNVGs1TmkweE1pMHhNbFF3TURvd01Eb3dNQzR3TURCYUlpd2laVzFoYVd3aU9pSnRiMmw2UUhsdmNHMWhhV3d1WTI5dElpd2lkWE5sY201aGJXVWlPaUoxYzJWeU16TTBOQ0lzSW5CeWIyWnBiR1ZmY0dsamRIVnlaU0k2SW1KMVkydGxkQ0JtYVd4bElIQmhkR2dpTENKc1lYTjBYM05sWlc0aU9tNTFiR3dzSW1KcGIyZHlZWEJvZVNJNklpSXNJbTV2WDI5bVgyWnlhV1Z1WkhNaU9qQXNJbXBsY25ObGVWOXVkVzFpWlhJaU9qY3NJbWx6WDIxaGJuVmhiRjlzYjJkcGJpSTZkSEoxWlN3aWJtOTBhV1pwWTJGMGFXOXVJanAwY25WbExDSnBjMTlrWlcxdklqcG1ZV3h6WlN3aVpHVjJhV05sWDNSdmEyVnVJanB1ZFd4c0xDSndjbTltYVd4bFgyRmpZMlZ6YzJsaWFXeHBkSGtpT2lKd2RXSnNhV01pZlN3aWFXRjBJam94TmpZek1UWXhNVGt3TENKbGVIQWlPakUyTmpNeU5EYzFPVEFzSW1GMVpDSTZJbHR2WW1wbFkzUWdUMkpxWldOMFhTSXNJbWx6Y3lJNklqUXpNeTFrWlhZaWZRLjI3TDBXNS1USC1kaFZLeC1yaDhzWGFpWF9fZjY2aXhSVTBhMzNHQ3NUQWsiLCJiaW9ncmFwaHkiOiIiLCJub19vZl9mcmllbmRzIjowLCJqZXJzZXlfbnVtYmVyIjo3LCJpc19tYW51YWxfbG9naW4iOnRydWUsIm5vdGlmaWNhdGlvbiI6dHJ1ZSwiaXNfZGVtbyI6ZmFsc2UsImRldmljZV90b2tlbiI6bnVsbCwicHJvZmlsZV9hY2Nlc3NpYmlsaXR5IjoicHVibGljIn0sImlhdCI6MTY2MzE2MTE5MH0.wfk4we3Vtg31rhJegNI26XyANN8ZFK3dlAaA96qItFY&quot;,&quot;biography&quot;:&quot;&quot;,&quot;no_of_friends&quot;:0,&quot;jersey_number&quot;:7,&quot;is_manual_login&quot;:true,&quot;notification&quot;:false,&quot;is_demo&quot;:false,&quot;device_token&quot;:null,&quot;profile_accessibility&quot;:&quot;public&quot;}}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; Then passed">
+  <span class="keyword indention">&gt;&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">match response.status_code == 200</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">match response.message == &quot;User logged in successfully &quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; And passed">
+  <span class="keyword indention">&gt;&gt; And</span>
+  <span class="name">match response.data.user.access_token != null</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">def accessToken = &quot;Bearer &quot;+response.data.user.access_token</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def headersToBeUsed = headersTo.CommonHeaders</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">headersToBeUsed[&quot;Authorization&quot;] = result.accessToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def parameters = paramsTo.ViralsListing_Params</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path pathsTo.MobileAPI.ViralsListing</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">params parameters</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">headers headersToBeUsed</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method GET</span>
+
+  <span class="lead-duration duration">1.174</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>19:08:57.008 request:
+1 &gt; GET https://dev.homemedia.api.by433.com/v2/virals?limit=10&amp;from=0
+1 &gt; Content-Type: application/json
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip, deflate, br
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjMyMWQyYzJmMDQ0ZGIwNDIzNGJkYjJiIiwiZmlyc3RfbmFtZSI6Ik5ldyIsImxhc3RfbmFtZSI6IlVzZXIiLCJnZW5kZXIiOjEsImRhdGVfb2ZfYmlydGgiOiIxOTk2LTEyLTEyVDAwOjAwOjAwLjAwMFoiLCJlbWFpbCI6Im1vaXpAeW9wbWFpbC5jb20iLCJ1c2VybmFtZSI6InVzZXIzMzQ0IiwicHJvZmlsZV9waWN0dXJlIjoiYnVja2V0IGZpbGUgcGF0aCIsImxhc3Rfc2VlbiI6IjIwMjItMTAtMzFUMDY6NDE6MzEuMDAwWiIsImJpb2dyYXBoeSI6IiIsIm5vX29mX2ZyaWVuZHMiOjAsImplcnNleV9udW1iZXIiOjcsImlzX21hbnVhbF9sb2dpbiI6dHJ1ZSwibm90aWZpY2F0aW9uIjpmYWxzZSwiaXNfZGVtbyI6ZmFsc2UsImRldmljZV90b2tlbiI6bnVsbCwicHJvZmlsZV9hY2Nlc3NpYmlsaXR5IjoicHVibGljIn0sImlhdCI6MTY3NTk1MTczNywiZXhwIjoxNjc2MDM4MTM3LCJhdWQiOiJbb2JqZWN0IE9iamVjdF0iLCJpc3MiOiI0MzMtZGV2In0.XWAPmnsPb7zegejwhljUNJ_J9QsvdEfVUjbwToh-dgg
+1 &gt; Host: dev.homemedia.api.by433.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+
+
+19:08:58.174 response time in milliseconds: 1165
+1 &lt; 200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 09 Feb 2023 14:08:58 GMT
+1 &lt; x-amzn-RequestId: 59a41466-ac4c-40d8-ba6e-bfba2da94564
+1 &lt; referrer-policy: no-referrer
+1 &lt; x-dns-prefetch-control: off
+1 &lt; x-permitted-cross-domain-policies: none
+1 &lt; x-xss-protection: 0
+1 &lt; access-control-allow-origin: *
+1 &lt; expect-ct: max-age=0
+1 &lt; strict-transport-security: max-age=15552000; includeSubDomains
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; content-security-policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+1 &lt; origin-agent-cluster: ?1
+1 &lt; cross-origin-embedder-policy: require-corp
+1 &lt; x-download-options: noopen
+1 &lt; cross-origin-opener-policy: same-origin
+1 &lt; x-amz-apigw-id: AEyzHFb2oAMF3hg=
+1 &lt; vary: Accept-Encoding
+1 &lt; x-content-type-options: nosniff
+1 &lt; etag: W/&quot;f02-3Cy1zM440O8qFhQzKB2wXO6W/zc&quot;
+1 &lt; x-powered-by: BACKEND REPO :)
+1 &lt; cross-origin-resource-policy: same-origin
+1 &lt; X-Amzn-Trace-Id: Root=1-63e4fe7a-7a58c7a830757abe3c926cd9;Sampled=0
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 f7fedd35576ed7786be7f17a40427e36.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: DXB53-P1
+1 &lt; X-Amz-Cf-Id: Blzz0ZapmIVtBpDM50Rml9sY_hTOh1tH9VnQuj24FhGKaF1O95g8zw==
+{&quot;response&quot;:true,&quot;status_code&quot;:200,&quot;message&quot;:&quot;Success&quot;,&quot;error_msgs&quot;:[],&quot;meta_data&quot;:{&quot;from&quot;:0,&quot;limit&quot;:10},&quot;data&quot;:{&quot;is_cached&quot;:false,&quot;total_records&quot;:699,&quot;last_created_at&quot;:&quot;2023-02-09T01:04:28.392Z&quot;,&quot;last_updated_at&quot;:&quot;2023-02-09T14:00:27.934Z&quot;,&quot;records&quot;:[{&quot;id&quot;:&quot;63e4469caeba077796298957&quot;,&quot;caption&quot;:&quot;Viral Caption API Automation&quot;,&quot;width&quot;:2160,&quot;height&quot;:4096,&quot;thumbnail_url&quot;:&quot;media/photos/QA_Video_Thumbnail.jpg&quot;,&quot;url&quot;:&quot;media/hls/QA_Video_hls/00476daf-ddec-4ade-9bc4-19ecd20a85bf.m3u8&quot;,&quot;show_comments&quot;:true,&quot;show_likes&quot;:true,&quot;total_likes&quot;:0,&quot;total_comments&quot;:0,&quot;is_liked&quot;:0,&quot;viral_creator&quot;:{},&quot;created_at&quot;:&quot;2023-02-09T01:04:28.391Z&quot;},{&quot;id&quot;:&quot;63e4469caeba07779629894e&quot;,&quot;caption&quot;:&quot;Viral ImageAPI Automation Title i98gt&quot;,&quot;width&quot;:2160,&quot;height&quot;:4096,&quot;thumbnail_url&quot;:&quot;&quot;,&quot;url&quot;:&quot;media/photos/QA_Image_1.png&quot;,&quot;show_comments&quot;:true,&quot;show_likes&quot;:true,&quot;total_likes&quot;:0,&quot;total_comments&quot;:0,&quot;is_liked&quot;:0,&quot;viral_creator&quot;:{},&quot;created_at&quot;:&quot;2023-02-09T01:04:28.236Z&quot;},{&quot;id&quot;:&quot;63e4469caeba077796298945&quot;,&quot;caption&quot;:&quot;Viral VideoAPI Automation Title gykgx&quot;,&quot;width&quot;:2160,&quot;height&quot;:4096,&quot;thumbnail_url&quot;:&quot;media/photos/QA_Video_Thumbnail.jpg&quot;,&quot;url&quot;:&quot;media/hls/QA_Video_hls/00476daf-ddec-4ade-9bc4-19ecd20a85bf.m3u8&quot;,&quot;show_comments&quot;:true,&quot;show_likes&quot;:true,&quot;total_likes&quot;:0,&quot;total_comments&quot;:0,&quot;is_liked&quot;:0,&quot;viral_creator&quot;:{},&quot;created_at&quot;:&quot;2023-02-09T01:04:28.094Z&quot;},{&quot;id&quot;:&quot;63e2f51be35718379921bd53&quot;,&quot;caption&quot;:&quot;Viral Caption API Automation&quot;,&quot;width&quot;:2160,&quot;height&quot;:4096,&quot;thumbnail_url&quot;:&quot;media/photos/QA_Video_Thumbnail.jpg&quot;,&quot;url&quot;:&quot;media/hls/QA_Video_hls/00476daf-ddec-4ade-9bc4-19ecd20a85bf.m3u8&quot;,&quot;show_comments&quot;:true,&quot;show_likes&quot;:true,&quot;total_likes&quot;:0,&quot;total_comments&quot;:0,&quot;is_liked&quot;:0,&quot;viral_creator&quot;:{},&quot;created_at&quot;:&quot;2023-02-08T01:04:27.963Z&quot;},{&quot;id&quot;:&quot;63e2f51be35718379921bd4a&quot;,&quot;caption&quot;:&quot;Viral ImageAPI Automation Title 2a2rl&quot;,&quot;width&quot;:2160,&quot;height&quot;:4096,&quot;thumbnail_url&quot;:&quot;&quot;,&quot;url&quot;:&quot;media/photos/QA_Image_1.png&quot;,&quot;show_comments&quot;:true,&quot;show_likes&quot;:true,&quot;total_likes&quot;:0,&quot;total_comments&quot;:0,&quot;is_liked&quot;:0,&quot;viral_creator&quot;:{},&quot;created_at&quot;:&quot;2023-02-08T01:04:27.819Z&quot;},{&quot;id&quot;:&quot;63e2f51be35718379921bd41&quot;,&quot;caption&quot;:&quot;Viral VideoAPI Automation Title gd1uu&quot;,&quot;width&quot;:2160,&quot;height&quot;:4096,&quot;thumbnail_url&quot;:&quot;media/photos/QA_Video_Thumbnail.jpg&quot;,&quot;url&quot;:&quot;media/hls/QA_Video_hls/00476daf-ddec-4ade-9bc4-19ecd20a85bf.m3u8&quot;,&quot;show_comments&quot;:true,&quot;show_likes&quot;:true,&quot;total_likes&quot;:0,&quot;total_comments&quot;:0,&quot;is_liked&quot;:0,&quot;viral_creator&quot;:{},&quot;created_at&quot;:&quot;2023-02-08T01:04:27.675Z&quot;},{&quot;id&quot;:&quot;63e1a39dbf07820b15d650ee&quot;,&quot;caption&quot;:&quot;Viral Caption API Automation&quot;,&quot;width&quot;:2160,&quot;height&quot;:4096,&quot;thumbnail_url&quot;:&quot;media/photos/QA_Video_Thumbnail.jpg&quot;,&quot;url&quot;:&quot;media/hls/QA_Video_hls/00476daf-ddec-4ade-9bc4-19ecd20a85bf.m3u8&quot;,&quot;show_comments&quot;:true,&quot;show_likes&quot;:true,&quot;total_likes&quot;:1,&quot;total_comments&quot;:0,&quot;is_liked&quot;:0,&quot;viral_creator&quot;:{},&quot;created_at&quot;:&quot;2023-02-07T01:04:29.982Z&quot;},{&quot;id&quot;:&quot;63e1a39dbf07820b15d650e5&quot;,&quot;caption&quot;:&quot;Viral ImageAPI Automation Title ttc99&quot;,&quot;width&quot;:2160,&quot;height&quot;:4096,&quot;thumbnail_url&quot;:&quot;&quot;,&quot;url&quot;:&quot;media/photos/QA_Image_1.png&quot;,&quot;show_comments&quot;:true,&quot;show_likes&quot;:true,&quot;total_likes&quot;:3,&quot;total_comments&quot;:0,&quot;is_liked&quot;:0,&quot;viral_creator&quot;:{},&quot;created_at&quot;:&quot;2023-02-07T01:04:29.841Z&quot;},{&quot;id&quot;:&quot;63e1a39dbf07820b15d650dc&quot;,&quot;caption&quot;:&quot;Viral VideoAPI Automation Title bapdj&quot;,&quot;width&quot;:2160,&quot;height&quot;:4096,&quot;thumbnail_url&quot;:&quot;media/photos/QA_Video_Thumbnail.jpg&quot;,&quot;url&quot;:&quot;media/hls/QA_Video_hls/00476daf-ddec-4ade-9bc4-19ecd20a85bf.m3u8&quot;,&quot;show_comments&quot;:true,&quot;show_likes&quot;:true,&quot;total_likes&quot;:0,&quot;total_comments&quot;:0,&quot;is_liked&quot;:0,&quot;viral_creator&quot;:{},&quot;created_at&quot;:&quot;2023-02-07T01:04:29.665Z&quot;},{&quot;id&quot;:&quot;63e0521c35795545502add7d&quot;,&quot;caption&quot;:&quot;Viral Caption API Automation&quot;,&quot;width&quot;:2160,&quot;height&quot;:4096,&quot;thumbnail_url&quot;:&quot;media/photos/QA_Video_Thumbnail.jpg&quot;,&quot;url&quot;:&quot;media/hls/QA_Video_hls/00476daf-ddec-4ade-9bc4-19ecd20a85bf.m3u8&quot;,&quot;show_comments&quot;:true,&quot;show_likes&quot;:true,&quot;total_likes&quot;:0,&quot;total_comments&quot;:0,&quot;is_liked&quot;:0,&quot;viral_creator&quot;:{},&quot;created_at&quot;:&quot;2023-02-06T01:04:28.368Z&quot;}]}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response.status_code == 200</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response.message == &quot;Success&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response.meta_data.from == 0</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response.meta_data.limit == 10</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">assert response.data.total_records &gt; 0</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match each $..id != ''</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match each $..caption != ''</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match each $..width != ''</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match each $..height != ''</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match each $..thumbnail_url == '#string'</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match each $..url != ''</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match each $..created_at != ''</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">string jsonResponse = response</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">string JSONSchemaExpected = read('../../schemas/ViralsListing.json')</span>
+
+  <span class="lead-duration duration">0.009</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">assert JavaFunctions.isValid(jsonResponse,JSONSchemaExpected)</span>
+
+  <span class="lead-duration duration">0.598</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def parameters = paramsTo.ViralsListing_Params</span>
+
+  <span class="lead-duration duration">0.012</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set parameters.viral_id = result.response.data.records[0].id</span>
+
+  <span class="lead-duration duration">0.010</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def parameters = paramsTo.ViralsListing_Params</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path pathsTo.MobileAPI.ViralsLikes</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">params parameters</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">headers headersToBeUsed</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+
+  <span class="lead-duration duration">0.838</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>19:08:58.861 request:
+1 &gt; GET https://dev.homemedia.api.by433.com/v2/virals/likes?limit=10&amp;from=0&amp;viral_id=63e4469caeba077796298957
+1 &gt; Content-Type: application/json
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip, deflate, br
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjMyMWQyYzJmMDQ0ZGIwNDIzNGJkYjJiIiwiZmlyc3RfbmFtZSI6Ik5ldyIsImxhc3RfbmFtZSI6IlVzZXIiLCJnZW5kZXIiOjEsImRhdGVfb2ZfYmlydGgiOiIxOTk2LTEyLTEyVDAwOjAwOjAwLjAwMFoiLCJlbWFpbCI6Im1vaXpAeW9wbWFpbC5jb20iLCJ1c2VybmFtZSI6InVzZXIzMzQ0IiwicHJvZmlsZV9waWN0dXJlIjoiYnVja2V0IGZpbGUgcGF0aCIsImxhc3Rfc2VlbiI6IjIwMjItMTAtMzFUMDY6NDE6MzEuMDAwWiIsImJpb2dyYXBoeSI6IiIsIm5vX29mX2ZyaWVuZHMiOjAsImplcnNleV9udW1iZXIiOjcsImlzX21hbnVhbF9sb2dpbiI6dHJ1ZSwibm90aWZpY2F0aW9uIjpmYWxzZSwiaXNfZGVtbyI6ZmFsc2UsImRldmljZV90b2tlbiI6bnVsbCwicHJvZmlsZV9hY2Nlc3NpYmlsaXR5IjoicHVibGljIn0sImlhdCI6MTY3NTk1MTczNiwiZXhwIjoxNjc2MDM4MTM2LCJhdWQiOiJbb2JqZWN0IE9iamVjdF0iLCJpc3MiOiI0MzMtZGV2In0.9MYp-WVoSavLCd8th-YJwwIVR3sQNX9c-iVAsu3CyaM
+1 &gt; Host: dev.homemedia.api.by433.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+
+
+19:08:59.694 response time in milliseconds: 832
+1 &lt; 200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 198
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 09 Feb 2023 14:08:59 GMT
+1 &lt; x-amzn-RequestId: b3744377-9605-4105-a36a-e0ebca27ef9f
+1 &lt; referrer-policy: no-referrer
+1 &lt; x-dns-prefetch-control: off
+1 &lt; x-permitted-cross-domain-policies: none
+1 &lt; x-xss-protection: 0
+1 &lt; access-control-allow-origin: *
+1 &lt; expect-ct: max-age=0
+1 &lt; strict-transport-security: max-age=15552000; includeSubDomains
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; x-amzn-Remapped-content-length: 198
+1 &lt; content-security-policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+1 &lt; origin-agent-cluster: ?1
+1 &lt; cross-origin-embedder-policy: require-corp
+1 &lt; x-download-options: noopen
+1 &lt; cross-origin-opener-policy: same-origin
+1 &lt; x-amz-apigw-id: AEyzYFnkIAMF3DQ=
+1 &lt; vary: Accept-Encoding
+1 &lt; x-content-type-options: nosniff
+1 &lt; etag: W/&quot;c6-tY1YcgyT5kwQVWgFZg4SCyme/R8&quot;
+1 &lt; x-powered-by: BACKEND REPO :)
+1 &lt; cross-origin-resource-policy: same-origin
+1 &lt; X-Amzn-Trace-Id: Root=1-63e4fe7b-664fcede4f8c60cf1f52fa9a;Sampled=0
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 a4c3fc0b94fb6ea50448b614dd9804ba.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: DXB53-P1
+1 &lt; X-Amz-Cf-Id: QBEzOdl-eJdPL4lYMeUpSPz8zJ0FpdXGH5wwwm0ltnq_dvqHDfOoHA==
+{&quot;response&quot;:true,&quot;status_code&quot;:200,&quot;message&quot;:&quot;Not found!&quot;,&quot;error_msgs&quot;:[],&quot;meta_data&quot;:{&quot;from&quot;:0,&quot;limit&quot;:10,&quot;viral_id&quot;:&quot;63e4469caeba077796298957&quot;},&quot;data&quot;:{&quot;total_records&quot;:0,&quot;viral_liked_persons&quot;:[]}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.status_code == 200</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">string jsonResponse = response</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def validations =</span>
+
+  <span class="lead-duration duration">0.028</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>if (response.data.total_records &gt; 0){
+karate.match(&quot;response.message == 'Success' &quot;)
+karate.match(&quot;response.meta_data.viral_id != '' &quot;)
+karate.match(&quot;each response.data.viral_liked_persons[0].id != '' &quot;)
+karate.match(&quot;each response.data.viral_liked_persons[0].first_name != '' &quot;)
+karate.match(&quot;each response.data.viral_liked_persons[0].last_name != '' &quot;)
+karate.match(&quot;each response.data.viral_liked_persons[0].username != '' &quot;)
+var JSONSchemaExpected = karate.read('../../schemas/ViralsLikes.json')
+karate.match(jsonResponse,JSONSchemaExpected)
+}
+if (response.data.total_records == 0) {
+karate.match(&quot;response.message == 'Not found!' &quot;)
+karate.match(&quot;response.meta_data.viral_id != '' &quot;)
+var JSONSchemaExpected = karate.read('../../schemas/ViralsNoLikes.json')
+karate.match(jsonResponse,JSONSchemaExpected)
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

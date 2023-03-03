@@ -1,0 +1,6 @@
+{
+  "NewsParams": {
+    "limit": 10,
+    "from": 0
+  }
+}
